@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>등급 및 혜택안내 | 멤버십 | BEAUTYNUS</title>
+	<link rel="stylesheet" href="../../css/ui.beautynus.css">
+	<link rel="stylesheet" href="../../css/jquery-ui.1.10.3.css">	
+	<script src="../../js/polyfill.js"></script>
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/ui.beautynus.js"></script>
+	<script src="../../js/swiper.jquery.umd.min.js"></script>
+</head>
+
+<body>
+
+
+<div id="wrap">
+    <!-- 뷰티엔젤 20년 프로모션 작업영역 -->
+    <div class="accordion_wrap">
+        <div class="title">
+            <h2>등급조건 및 혜택안내 <button type="button" class="tooltip_btn" onclick="javascript:memberTooltip($(this));"><span class="blind">금액기준안내</span></button></h2>
+            <div class="tooltip">*19년 백화점 구매금액을 기준으로 20년 멤버십 등급이 산정됩니다.</div>
+        </div>
+        <div class="cont">
+            <!-- Family등급 혜택 Accordion
+                [D] 고객의 등급이 Family등급일시, 멀티클래스 'active'추가.
+                ex) <div class="accordion_item rank_family active" accordion-name="family">
+            -->
+            <div class="accordion_item rank_family" accordion-name="family">
+                <button type="button" onclick="javascript:accordion($(this));" class="accordion_link" accordion-btn="family">
+                    <span class="rank_name">FAMILY</span>
+                    <span class="rank_condition">5만원 이상 구매</span>
+                </button>
+                <div class="accordion_cont">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="level_event">
+                                    <ul>
+                                        <li>
+                                            <a href="#none" class="evt_link">
+                                                <p class="evt_title">생일축하 쿠폰</p>
+                                                <span class="evt_text">둘 이름을 위에 릴케 소녀들의 하나에 둘 이름을 위에 릴케 소녀들의 하나에가득 계집애들의 멀듯이, 계십니다. 둘 이름을 위에 릴케 소녀들의 하나에 둘 이름을 위에 릴케 소녀들의 하나에가득 계집애들의 멀듯이, 계십니다.</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <!-- Swiper pagination 슬라이드 수에 맞게 자동 추가됨 -->
+                        <span class="bul bul_active"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- //Family등급 혜택 Accordion -->
+
+            <!-- LOYAL등급 혜택 Accordion 
+                [D] 고객의 등급이 LOYAL등급일시, 멀티클래스 'active'추가.
+                ex) <div class="accordion_item rank_loyal active" accordion-name="loyal">
+            -->
+            <div class="accordion_item rank_loyal" accordion-name="loyal">
+                <button type="button" onclick="javascript:accordion($(this));" class="accordion_link" accordion-btn="loyal">
+                    <span class="rank_name">LOYAL</span>
+                    <span class="rank_condition">100만원 이상 구매</span>
+                </button>
+                <div class="accordion_cont">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="level_event">
+                                    <ul>
+                                        <li>
+                                            <a href="#none" class="evt_link">
+                                                <p class="evt_title">생일축하 쿠폰</p>
+                                                <span class="evt_text">둘 이름을 위에 릴케 소녀들의 하나에 둘 이름을 위에 릴케 소녀들의 하나에가득 계집애들의 멀듯이, 계십니다. 둘 이름을 위에 릴케 소녀들의 하나에 둘 이름을 위에 릴케 소녀들의 하나에가득 계집애들의 멀듯이, 계십니다.</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none" class="evt_link">
+                                                <p class="evt_title">매월 1일 브랜드키트 체험쿠폰</p>
+                                                <span class="evt_text">밤이 경, 그리워 그러나 하늘에는 둘 봅니다.<br>소녀들의 내 너무나 이네들은 별빛입니다. 소녀들의 내 너무나 이네들은 별빛입니다. 소녀들의 내 너무나 이네들은 별빛입니다.</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <!-- Swiper pagination 슬라이드 수에 맞게 자동 추가됨 -->
+                        <span class="bul bul_active"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- //VIP등급 혜택 Accordion -->
+
+            <!-- LUXURY등급 혜택 Accordion 
+                [D] 고객의 등급이 LUXURY, 멀티클래스 'active'추가.
+                ex) <div class="accordion_item rank_luxury active" accordion-name="luxury">
+            -->
+            <div class="accordion_item rank_luxury active" accordion-name="luxury">
+                <button type="button" onclick="javascript:accordion($(this));" class="accordion_link" accordion-btn="luxury">
+                    <span class="rank_name">LUXURY</span>
+                    <span class="rank_condition">300만원 이상 구매</span>
+                </button>
+                <div class="accordion_cont">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="level_event">
+                                    <ul>
+                                        <li>
+                                            <a href="#none" class="evt_link">
+                                                <p class="evt_title">생일축하 쿠폰생일축하 쿠폰생일축하 쿠폰생일축하 쿠폰생일축하 쿠폰</p>
+                                                <span class="evt_text">둘 이름을 위에 릴케 소녀들의 하나에 둘 이름을 위에 릴케 소녀들의 하나에가득 계집애들의 멀듯이, 계십니다. 둘 이름을 위에 릴케 소녀들의 하나에 둘 이름을 위에 릴케 소녀들의 하나에가득 계집애들의 멀듯이, 계십니다.둘 이름을 위에 릴케 소녀들의 하나에 둘 이름을 위에 릴케 소녀들의 하나에가득 계집애들의 멀듯이, 계십니다.</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none" class="evt_link">
+                                                <p class="evt_title">매월 1일 브랜드키트 체험쿠폰매월 1일 브랜드키트 체험쿠폰</p>
+                                                <span class="evt_text">밤이 경, 그리워 그러나 하늘에는 둘 봅니다.<br>소녀들의 내 너무나 이네들은 별빛입니다. 소녀들의 내 너무나 이네들은 별빛입니다. 소녀들의 내 너무나 이네들은 별빛입니다.<br>밤이 경, 그리워 그러나 하늘에는 둘 봅니다.</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="level_event">
+                                    <ul>
+                                        <li>
+                                            <a href="#none" class="evt_link">
+                                                <p class="evt_title">생일축하 쿠폰</p>
+                                                <span class="evt_text">둘 이름을 위에 릴케 소녀들의 하나에 둘 이름을 위에 릴케 소녀들의 하나에가득 계집애들의 멀듯이, 계십니다. 둘 이름을 위에 릴케 소녀들의 하나에 둘 이름을 위에 릴케 소녀들의 하나에가득 계집애들의 멀듯이, 계십니다.</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none" class="evt_link">
+                                                <p class="evt_title">매월 1일 브랜드키트 체험쿠폰</p>
+                                                <span class="evt_text">밤이 경, 그리워 그러나 하늘에는 둘 봅니다.<br>소녀들의 내 너무나 이네들은 별빛입니다. 소녀들의 내 너무나 이네들은 별빛입니다. 소녀들의 내 너무나 이네들은 별빛입니다.</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="level_event">
+                                    <ul>
+                                        <li>
+                                            <a href="#none" class="evt_link">
+                                                <p class="evt_title">생일축하 쿠폰</p>
+                                                <span class="evt_text">둘 이름을 위에 릴케 소녀들의 하나에 둘 이름을 위에 릴케 소녀들의 하나에가득 계집애들의 멀듯이, 계십니다. 둘 이름을 위에 릴케 소녀들의 하나에 둘 이름을 위에 릴케 소녀들의 하나에가득 계집애들의 멀듯이, 계십니다.</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none" class="evt_link">
+                                                <p class="evt_title">매월 1일 브랜드키트 체험쿠폰</p>
+                                                <span class="evt_text">밤이 경, 그리워 그러나 하늘에는 둘 봅니다.<br>소녀들의 내 너무나 이네들은 별빛입니다. 소녀들의 내 너무나 이네들은 별빛입니다. 소녀들의 내 너무나 이네들은 별빛입니다.</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="level_event">
+                                    <ul>
+                                        <li>
+                                            <a href="#none" class="evt_link">
+                                                <p class="evt_title">생일축하 쿠폰</p>
+                                                <span class="evt_text">둘 이름을 위에 릴케 소녀들의 하나에 둘 이름을 위에 릴케 소녀들의 하나에가득 계집애들의 멀듯이, 계십니다. 둘 이름을 위에 릴케 소녀들의 하나에 둘 이름을 위에 릴케 소녀들의 하나에가득 계집애들의 멀듯이, 계십니다.</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none" class="evt_link">
+                                                <p class="evt_title">매월 1일 브랜드키트 체험쿠폰</p>
+                                                <span class="evt_text">밤이 경, 그리워 그러나 하늘에는 둘 봅니다.<br>소녀들의 내 너무나 이네들은 별빛입니다. 소녀들의 내 너무나 이네들은 별빛입니다. 소녀들의 내 너무나 이네들은 별빛입니다.</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <!-- Swiper pagination 슬라이드 수에 맞게 자동 추가됨 -->
+                        <span class="bul bul_active"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- //VVIP등급 혜택 Accordion -->
+
+            <!-- PRESTIGE등급 혜택 Accordion 
+                [D] 고객의 등급이 PRESTIGE등급일시, 멀티클래스 'active'추가.
+                ex) <div class="accordion_item rank_prestige active" accordion-name="prestige">
+            -->
+            <div class="accordion_item rank_prestige" accordion-name="prestige">
+                <button type="button" onclick="javascript:accordion($(this));" class="accordion_link" accordion-btn="prestige">
+                    <span class="rank_name">PRESTIGE</span>
+                    <span class="rank_condition">500만원 이상 구매</span>
+                </button>
+                <div class="accordion_cont">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="level_event">
+                                    <ul>
+                                        <li>
+                                            <a href="#none" class="evt_link">
+                                                <p class="evt_title">생일축하 쿠폰</p>
+                                                <span class="evt_text">둘 이름을 위에 릴케 소녀들의 하나에 둘 이름을 위에 릴케 소녀들의 하나에가득 계집애들의 멀듯이, 계십니다. 둘 이름을 위에 릴케 소녀들의 하나에 둘 이름을 위에 릴케 소녀들의 하나에가득 계집애들의 멀듯이, 계십니다.</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none" class="evt_link">
+                                                <p class="evt_title">매월 1일 브랜드키트 체험쿠폰</p>
+                                                <span class="evt_text">밤이 경, 그리워 그러나 하늘에는 둘 봅니다.<br>소녀들의 내 너무나 이네들은 별빛입니다. 소녀들의 내 너무나 이네들은 별빛입니다. 소녀들의 내 너무나 이네들은 별빛입니다.</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="level_event">
+                                    <ul>
+                                        <li>
+                                            <a href="#none" class="evt_link">
+                                                <p class="evt_title">생일축하 쿠폰</p>
+                                                <span class="evt_text">둘 이름을 위에 릴케 소녀들의 하나에 둘 이름을 위에 릴케 소녀들의 하나에가득 계집애들의 멀듯이, 계십니다. 둘 이름을 위에 릴케 소녀들의 하나에 둘 이름을 위에 릴케 소녀들의 하나에가득 계집애들의 멀듯이, 계십니다.</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#none" class="evt_link">
+                                                <p class="evt_title">매월 1일 브랜드키트 체험쿠폰</p>
+                                                <span class="evt_text">밤이 경, 그리워 그러나 하늘에는 둘 봅니다.<br>소녀들의 내 너무나 이네들은 별빛입니다. 소녀들의 내 너무나 이네들은 별빛입니다. 소녀들의 내 너무나 이네들은 별빛입니다.</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <!-- Swiper pagination 슬라이드 수에 맞게 자동 추가됨 -->
+                        <span class="bul bul_active"></span>
+                    </div>
+                </div>
+            </div>
+            <!-- //Luxury등급 혜택 Accordion -->
+        </div>
+    </div>
+    <!-- //뷰티엔젤 20년 프로모션 작업영역 -->
+</div>
+
+<script>
+/* Sub Title Tooltip Layer */
+function memberTooltip(thisBtn){
+    var _target = $('.accordion_wrap .tooltip');
+    var toolleft = thisBtn.offset().left;
+
+    if( _target.css('display') == 'none' ){
+        _target.css({'left':toolleft + 20 +'px'}).show();
+    }else{
+        _target.hide();
+    }
+};
+/* //Sub Title Tooltip Layer */
+
+/* Accordion Action */
+var swiper;
+var acco = {
+    init : function(_this){
+        name = _this.attr('accordion-btn');
+        wrap = $('[accordion-name='+name+']');
+        cont = _this.siblings('.accordion_cont');
+        swipe = cont.find('.swiper-container');
+        other = $(wrap).siblings('.accordion_item');
+        otherCont = other.find('.accordion_cont');
+        this.evtHeander();
+    },
+    evtHeander : function(){
+        other.removeClass('active');
+        otherCont.hide();
+        otherCont.find('.pagination').hide();
+        wrap.addClass('active');
+        cont.show();
+        cont.find('.pagination').show(500);
+        if( swiper != undefined ){
+            swiper.destroy(false, true);
+        };
+        this.swipe(swipe);
+    },
+    swipe : function(swipe){
+        if( swipe.find('.swiper-slide').length >= 2 ){
+            swiper = new Swiper(swipe, {
+                slidesPerView: 1,
+                pagination : swipe.siblings('.pagination'),
+                paginationClickable : true,
+                bulletClass : 'bul',
+                bulletActiveClass : 'bul_active'
+            });
+        }else{
+            swipe.siblings('.pagination').remove();
+        };
+    },
+    startSet : function(level){
+        level.show();
+        this.swipe(level.find('.swiper-container'));
+    }
+};
+
+function accordion(_this){
+    acco.init(_this);
+}
+
+$(document).ready(function(){
+    var level = $('.accordion_item.active .accordion_cont');
+    acco.startSet(level);
+    
+    if( $(window).height() < 735 ){
+        $('.accordion_wrap').addClass('notch');
+    }
+});
+/* //Accordion Action */
+</script>
+
+
+</body>
+</html>

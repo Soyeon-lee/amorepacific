@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>이벤트 상세페이지 | 멤버십 | BEAUTYNUS</title>
+	<link rel="stylesheet" href="../../../front/css/ui.beautynus.css">
+	<link rel="stylesheet" href="../../../front/css/jquery-ui.1.10.3.css">	
+	<script src="../../../front/js/polyfill.js"></script>
+	<script src="../../../front/js/jquery.js"></script>
+	<script src="../../../front/js/ui.beautynus.js"></script>
+	<script src="../../../front/js/swiper.jquery.umd.min.js"></script>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div class="evt_wrap">
+        <div class="evt_detail">
+            <img src="../../images/img_event03.png" alt="이벤트 이미지">
+        </div>
+        <div class="evt_welcome">
+            <ul>
+                <!-- [D] 지급완료 및 등급 미달성 시 disabled 추가 
+                    ex) <button type="button" class="btn_welcome" disabled>수령</button>
+                -->
+                <li>LOYAL 월컴포인트 <button type="button" class="btn_welcome">수령</button></li>
+                <li>LUXURY 월컴포인트 <button type="button" class="btn_welcome" disabled>지급완료</button></li>
+                <li>PRESTIGE 월컴포인트 <button type="button" class="btn_welcome" disabled>수령</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+/* 191120 멤버쉽 이벤트 상세 - 정경진 */
+(function(global, $){
+    'use strict';
+    var _evtEntry = $('.evt_entry'),
+        _evtItem = $('.evt_detail'),
+        _evtWelcome = $('.evt_welcome'),
+        evtEntryH = _evtEntry.find('.evt_btn').height(),
+        evtScrollS, evtScrollE, scrollH,
+        evtPadding = {
+            init : function(){
+                var _this = this;
+                _this.handler();
+            },
+            handler : function(){
+                var _this = this;
+                if( _evtWelcome.length > 0 ){
+                    var _target = _evtWelcome;
+                    var $targetH = _target.outerHeight() - 25;
+                    _this.welcome(_target, $targetH);
+                };
+            },
+            welcome : function(_target, $targetH){
+                this.touch(_target, $targetH);
+            },
+            touch : function(_target, $targetH){
+                var _this = this;
+                evtScrollE = 0;
+                scrollH = 15;
+                $(window).scroll(function(){    // 혹시 안되면 $('body')로 수정 후 테스트 필요
+                    evtScrollS = $(this).scrollTop();
+                    if (Math.abs(evtScrollE - evtScrollS) <= scrollH) return;
+                    if ((evtScrollS > evtScrollE) && (evtScrollE > 0)) {
+                        _this.fixOpen(_target, $targetH);
+                    } else {
+                        _this.fixClose(_target, $targetH);
+                    }
+                    evtScrollE = evtScrollS;
+                });
+            },
+            fixOpen : function(_target, $targetH){
+                _target.addClass('active');
+                _evtItem.css({'padding-bottom': $targetH - 10 + 'px'});
+                return true;
+            },
+            fixClose : function(_target, $targetH){
+                _target.removeClass('active');
+                if( _target.hasClass('evt_welcome') ){
+                    _evtItem.css({'padding-bottom': '0px'});
+                }else{
+                    _evtItem.css({'padding-bottom': '23px'});
+                }
+                return true;
+            }
+        };
+
+    evtPadding.init();
+})(window, window.jQuery);
+
+$(document).ready(function(){
+    // 참여가능 등급 유무 체크 여백
+    if( $('.rank_wrap').length > 0 ){
+        $('.evt_wrap').css({'padding-top':'50px'})
+    }
+});
+
+/* //191120 멤버쉽 이벤트 상세 - 정경진 */
+
+</script>
+
+
+</body>
+</html>

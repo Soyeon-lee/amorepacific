@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>이벤트 상세페이지 | 멤버십 | BEAUTYNUS</title>
+	<link rel="stylesheet" href="../../../front/css/ui.beautynus.css">
+	<link rel="stylesheet" href="../../../front/css/jquery-ui.1.10.3.css">	
+	<script src="../../../front/js/polyfill.js"></script>
+	<script src="../../../front/js/jquery.js"></script>
+	<script src="../../../front/js/ui.beautynus.js"></script>
+	<script src="../../../front/js/swiper.jquery.umd.min.js"></script>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div class="evt_wrap">
+        <div class="rank_wrap">
+            <span class="rank_family"><em class="blind">Family등급 응모가능</em></span>
+            <span class="rank_loyal"><em class="blind">Loyal등급 응모가능</em></span>
+            <span class="rank_luxury"><em class="blind">Luxury등급 응모가능</em></span>
+            <span class="rank_prestige"><em class="blind">Prestige등급 응모가능</em></span>
+        </div>
+        <div class="evt_detail">
+            <img src="../../images/img_event02.png" alt="이벤트 이미지">
+        </div>
+        <div class="evt_entry">
+            <!-- [D] 응모완료 시 disabled 추가 
+                ex) <button type="button" class="evt_btn" disabled>응모하기</button>
+            -->
+            <button type="button" class="evt_btn">응모하기</button>
+            <!-- <button type="button" class="evt_btn" disabled>응모하기</button> -->
+        </div>
+    </div>
+</div>
+
+<script>
+/* 191120 멤버쉽 이벤트 상세 - 정경진 */
+(function(global, $){
+    'use strict';
+    var _evtEntry = $('.evt_entry'),
+        _evtItem = $('.evt_detail'),
+        evtEntryH = _evtEntry.find('.evt_btn').height(),
+        evtPadding = {
+            init : function(){
+                var _this = this;
+                _this.handler();
+            },
+            handler : function(){
+                var _this = this;
+                if( _evtEntry.length > 0){
+                    _this.basic();
+                };
+            },
+            basic : function(){
+                _evtItem.css({'padding-bottom':evtEntryH + 'px'});
+            }
+        };
+
+    evtPadding.init();
+})(window, window.jQuery);
+
+$(document).ready(function(){
+    // 참여가능 등급 유무 체크 여백
+    if( $('.rank_wrap').length > 0 ){
+        $('.evt_wrap').css({'padding-top':'50px'})
+    }
+});
+/* //191120 멤버쉽 이벤트 상세 - 정경진 */
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>이벤트 상세페이지 | 멤버십 | BEAUTYNUS</title>
+	<link rel="stylesheet" href="../../../front/css/ui.beautynus.css">
+	<link rel="stylesheet" href="../../../front/css/jquery-ui.1.10.3.css">	
+	<script src="../../../front/js/polyfill.js"></script>
+	<script src="../../../front/js/jquery.js"></script>
+	<script src="../../../front/js/ui.beautynus.js"></script>
+	<script src="../../../front/js/swiper.jquery.umd.min.js"></script>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div class="evt_wrap">
+        <div class="rank_wrap">
+            <span class="rank_family"><em class="blind">Family등급 응모가능</em></span>
+            <span class="rank_loyal"><em class="blind">Loyal등급 응모가능</em></span>
+            <span class="rank_luxury"><em class="blind">Luxury등급 응모가능</em></span>
+            <span class="rank_prestige"><em class="blind">Prestige등급 응모가능</em></span>
+        </div>
+        <div class="evt_detail">
+            <img src="../../images/img_event01.png" alt="이벤트 이미지">
+        </div>
+        <div class="evt_coupon">
+            <a href="#none" class="evt_coupon_bar"><img src="../../images/img_event_bar.png" alt="쿠폰다운로드 열기"></a>
+            <div class="evt_coupon_cont">
+                <ul>
+                    <li><img src="../../images/img_event_coupon.png" alt="Beautyangel 5000원 PAYBACK 쿠폰"></li>
+                    <!-- [D] 쿠폰다운로드 버튼 비활성화시 disabled추가
+                        ex)<button type="button" class="evt_btn" disabled>쿠폰이 모두 소진되었습니다.</button>
+                    -->
+                    <li><button type="button" class="evt_btn">쿠폰다운로드</button></li>   
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+/* 191120 멤버쉽 이벤트 상세 - 정경진 */
+(function(global, $){
+    'use strict';
+    var _evtCoupon = $('.evt_coupon'),
+        _evtItem = $('.evt_detail'),
+        evtScrollS, evtScrollE, scrollH,
+        evtPadding = {
+            init : function(){
+                var _this = this;
+                _this.handler();
+            },
+            handler : function(){
+                var _this = this;
+                if( _evtCoupon.length > 0 ){
+                    var _target = _evtCoupon;
+                    var $targetH = _target.outerHeight() -23;
+                    _this.coupon(_target, $targetH);
+                };
+            },
+            coupon : function(_target, $targetH){
+                var _this = this;
+                _evtCoupon.find('.evt_coupon_bar').on('click', function(){
+                    if( _evtCoupon.hasClass('active') ){
+                        _this.fixClose(_target, $targetH);
+                    }else{
+                        _this.fixOpen(_target, $targetH);
+                    }
+                });
+
+                _this.touch(_target, $targetH);
+            },
+            touch : function(_target, $targetH){
+                var _this = this;
+                evtScrollE = 0;
+                scrollH = 15;
+                $(window).scroll(function(){    // 혹시 안되면 $('body')로 수정 후 테스트 필요
+                    evtScrollS = $(this).scrollTop();
+                    if (Math.abs(evtScrollE - evtScrollS) <= scrollH) return;
+                    if ((evtScrollS > evtScrollE) && (evtScrollE > 0)) {
+                        _this.fixOpen(_target, $targetH);
+                    } else {
+                        _this.fixClose(_target, $targetH);
+                    }
+                    evtScrollE = evtScrollS;
+                });
+            },
+            fixOpen : function(_target, $targetH){
+                _target.addClass('active');
+                _evtItem.css({'padding-bottom': $targetH + 'px'});
+                return true;
+            },
+            fixClose : function(_target, $targetH){
+                _target.removeClass('active');
+                if( _target.hasClass('evt_welcome') ){
+                    _evtItem.css({'padding-bottom': '0px'});
+                }else{
+                    _evtItem.css({'padding-bottom': '23px'});
+                }
+                return true;
+            }
+        };
+
+    evtPadding.init();
+})(window, window.jQuery);
+
+$(document).ready(function(){
+    // 참여가능 등급 유무 체크 여백
+    if( $('.rank_wrap').length > 0 ){
+        $('.evt_wrap').css({'padding-top':'50px'})
+    }
+});
+/* //191120 멤버쉽 이벤트 상세 - 정경진 */
+</script>
+
+
+</body>
+</html>
