@@ -267,7 +267,9 @@ strong, b {
       공통
    ============================== */
 html, body {
-  height: 100%; }
+  height: 100%; 
+  -webkit-touch-scrolling:touch;
+}
 
 body {
   width: 100%;
