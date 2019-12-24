@@ -5,12 +5,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>이벤트 상세페이지 | 멤버십 | BEAUTYNUS</title>
-	<link rel="stylesheet" href="../../../front/css/ui.beautynus.css">
-	<link rel="stylesheet" href="../../../front/css/jquery-ui.1.10.3.css">	
-	<script src="../../../front/js/polyfill.js"></script>
-	<script src="../../../front/js/jquery.js"></script>
-	<script src="../../../front/js/ui.beautynus.js"></script>
-	<script src="../../../front/js/swiper.jquery.umd.min.js"></script>
+	<link rel="stylesheet" href="../../css/ui.beautynus.css">
+	<link rel="stylesheet" href="../../css/jquery-ui.1.10.3.css">	
+	<script src="../../js/polyfill.js"></script>
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/ui.beautynus.js"></script>
+	<script src="../../js/swiper.jquery.umd.min.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,8 @@
 (function(global, $){
     'use strict';
     var _evtEntry = $('.evt_entry'),
-        _evtItem = $('.evt_detail'),
+        // _evtItem = $('.evt_detail'),//191224
+        _evtItem = $('.evt_wrap'),//191224
         _evtWelcome = $('.evt_welcome'),
         evtEntryH = _evtEntry.find('.evt_btn').height(),
         evtScrollS, evtScrollE, scrollH,
@@ -64,7 +65,7 @@
                 scrollH = 15;
                 $(window).scroll(function(){    // 혹시 안되면 $('body')로 수정 후 테스트 필요
                     evtScrollS = $(this).scrollTop();
-                    if (Math.abs(evtScrollE - evtScrollS) <= scrollH) return;
+                    if (Math.abs(evtScrollE - evtScrollS) <= scrollH || evtScrollS > $(document).outerHeight() - $(window).height() - 30) return; //191224
                     if ((evtScrollS > evtScrollE) && (evtScrollE > 0)) {
                         _this.fixOpen(_target, $targetH);
                     } else {
