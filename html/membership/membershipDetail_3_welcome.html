@@ -2,17 +2,16 @@
 <html lang="ko">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<title>이벤트 상세페이지 | 멤버십 | BEAUTYNUS</title>
-	<link rel="stylesheet" href="../../css/ui.beautynus.css">
-	<link rel="stylesheet" href="../../css/jquery-ui.1.10.3.css">	
-	<script src="../../js/polyfill.js"></script>
-	<script src="../../js/jquery.js"></script>
-	<script src="../../js/ui.beautynus.js"></script>
-	<script src="../../js/swiper.jquery.umd.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>이벤트 상세페이지 | 멤버십 | BEAUTYNUS</title>
+    <link rel="stylesheet" href="../../css/ui.beautynus.css">
+    <link rel="stylesheet" href="../../css/jquery-ui.1.10.3.css">  
+    <script src="../../js/polyfill.js"></script>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/ui.beautynus.js"></script>
+    <script src="../../js/swiper.jquery.umd.min.js"></script>
 </head>
-
 <body>
 
 <div id="wrap">
@@ -38,8 +37,8 @@
 (function(global, $){
     'use strict';
     var _evtEntry = $('.evt_entry'),
-        // _evtItem = $('.evt_detail'),//191224
-        _evtItem = $('.evt_wrap'),//191224
+        // _evtItem = $('.evt_detail'),
+        _evtItem = $('.evt_wrap'),
         _evtWelcome = $('.evt_welcome'),
         evtEntryH = _evtEntry.find('.evt_btn').height(),
         evtScrollS, evtScrollE, scrollH,
@@ -65,11 +64,10 @@
                 scrollH = 15;
                 $(window).scroll(function(){    // 혹시 안되면 $('body')로 수정 후 테스트 필요
                     evtScrollS = $(this).scrollTop();
-                    // if (Math.abs(evtScrollE - evtScrollS) <= scrollH || evtScrollS > $(document).outerHeight() - $(window).height() - 15) return; //191224
-                    if(document.clientHeight>document.scrollHeight-document.scrollTop){return;}
+                    if (Math.abs(evtScrollE - evtScrollS) <= scrollH) return;
                     if ((evtScrollS > evtScrollE) && (evtScrollE > 0)) {
                         _this.fixOpen(_target, $targetH);
-                    } else {
+                    } else if(evtScrollS < $('.evt_detail').outerHeight() - $(window).innerHeight() - $targetH - scrollH) {
                         _this.fixClose(_target, $targetH);
                     }
                     evtScrollE = evtScrollS;
@@ -77,7 +75,7 @@
             },
             fixOpen : function(_target, $targetH){
                 _target.addClass('active');
-                _evtItem.css({'padding-bottom': $targetH - 10 + 'px'});
+                _evtItem.css({'padding-bottom': $targetH + 'px'});
                 return true;
             },
             fixClose : function(_target, $targetH){
