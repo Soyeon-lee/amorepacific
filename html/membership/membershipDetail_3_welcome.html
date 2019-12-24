@@ -65,7 +65,7 @@
                 scrollH = 15;
                 $(window).scroll(function(){    // 혹시 안되면 $('body')로 수정 후 테스트 필요
                     evtScrollS = $(this).scrollTop();
-                    if (Math.abs(evtScrollE - evtScrollS) <= scrollH || evtScrollS > $(document).outerHeight() - $(window).height() - 30) return; //191224
+                    if (Math.abs(evtScrollE - evtScrollS) <= scrollH || evtScrollS > $(document).outerHeight() - $(window).height() - 15) return; //191224
                     if ((evtScrollS > evtScrollE) && (evtScrollE > 0)) {
                         _this.fixOpen(_target, $targetH);
                     } else {
