@@ -56,24 +56,7 @@
                 </ul>
                 <div class="prodt_tab_cont">
                     <div class="editor_prodt">
-                        <p>◈KC인증 : HU10381-15021A<br>
-                            ◈정격전압, 소비전력 : 100-240V , 50/60Hz , 200mA<br>
-                            ◈제조국 : 중국<br>
-                            ◈크기 : 165*190*475mm<br>
-                            ◈특징 : <br>
-                            • 2중 필터시스템<br>
-                            • 이동이 편리한 무선 청소기<br>
-                            • 강력한 니켈수소(Ni-MH)배터리<br>
-                            • 쉬운 먼지통 비우기<br>
-                            • 경량으로 사용이 간편<br>
-                            • 쉬운 그립을 위한 인체 공학적 손잡이 디자인<br>
-                            • 손쉽게 비울 수 있는 원터치 분리 노즐<br>
-                            • 브러시노즐,틈새노즐로 좁은 공간도 쉽게 청소<br>
-                            • 벽면 및 탁상용 슬림 충전대<br>
-                            • 배터리 전압 : 3.6 V  <br>
-                            • 충전 시간 : 16~18시간 <br>
-                            • 작동 시간 : 9-10분<br>
-                            • 먼지 용량 : 0.5 L </p>
+                        <img src="../../images/img_detail_txt.jpg" alt="제품 상세 이미지">
                     </div>
                     <div class="gray_box">
                         <strong>다른 고객님들이 같이 본 상품</strong>
@@ -129,22 +112,10 @@
 </div>
 
 <script>
-    var swiper = new Swiper('swiper-container', {
-        pagination: {
-            // slidesPerView: 1,
-            pagination : 'pagination',
-            paginationClickable : true,
-            bulletClass : 'bul',
-            bulletActiveClass : 'bul_active'
-        }
-    });
-    
-    $(document).ready(function(){
-        var detailEditor = $('.editor_prodt');
-
-        if($(detailEditor).find("img")){
-            $(detailEditor).css('padding', '0');
-        }
+    var swiper = new Swiper('.swiper-container', {
+        pagination : $('.swiper-container').siblings('.pagination'),
+        bulletClass: 'bul',
+        bulletActiveClass: 'bul_active'
     });
 </script>
 

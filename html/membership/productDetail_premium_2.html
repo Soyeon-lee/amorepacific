@@ -113,14 +113,10 @@
 </div>
 
 <script>
-    var swiper = new Swiper('swiper-container', {
-        pagination: {
-            // slidesPerView: 1,
-            pagination : 'pagination',
-            paginationClickable : true,
-            bulletClass : 'bul',
-            bulletActiveClass : 'bul_active'
-        }
+    var swiper = new Swiper('.swiper-container', {
+        pagination : $('.swiper-container').siblings('.pagination'),
+        bulletClass: 'bul',
+        bulletActiveClass: 'bul_active'
     });
 </script>
 

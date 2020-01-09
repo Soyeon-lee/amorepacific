@@ -112,21 +112,19 @@
 </div>
 
 <script>
-    var swiper = new Swiper('prodt_slide', {
-        pagination: {
-            slidesPerView: 1,
-            pagination : 'pagination',
-            paginationClickable : true,
-            bulletClass : 'bul',
-            bulletActiveClass : 'bul_active'
-        }
+    var swiper = new Swiper('.swiper-container', {
+        pagination : $('.swiper-container').siblings('.pagination'),
+        bulletClass: 'bul',
+        bulletActiveClass: 'bul_active'
     });
 
     $(document).ready(function(){
         var detailEditor = $('.editor_prodt');
 
-        if($(detailEditor).find("img")){
+        if($(detailEditor).children().find("img")){
             $(detailEditor).css('padding', '0');
+        }else{
+            $(detailEditor).css('padding', '15px 0 18px');
         }
     });
 </script>
