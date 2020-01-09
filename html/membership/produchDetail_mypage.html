@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>마이페이지 | 판촉주문현황 | BEAUTYNUS</title>
+	<link rel="stylesheet" href="../../css/ui.beautynus.css">
+	<link rel="stylesheet" href="../../css/jquery-ui.1.10.3.css">	
+	<script src="../../js/polyfill.js"></script>
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/ui.beautynus.js"></script>
+	<script src="../../js/swiper.jquery.umd.min.js"></script>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div class="myrecent_wrap">
+        <ul class="recent_month">
+            <li><a href="javascript:void(0);"><span>최근1개월</span></a></li>
+            <li class="on"><a href="javascript:void(0);"><span>최근3개월</span></a></li>
+            <li><a href="javascript:void(0);"><span>최근6개월</span></a></li>
+        </ul>
+        <div class="recent_sort">
+            <div class="select_box">
+                <a href="#none" title="조회내역 선택" class="select_value"><span>교환내역</span></a>
+                <div class="select_list">
+                    <ul>
+                        <li><a href="#none"><span>사은품샵</span></a></li>
+                        <li><a href="#none"><span>프리미엄관</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="recent_list">
+            <!-- [D] 배송 조회는 li 기준으로 늘어남 -->
+            <li>
+                <div class="recent_prodt_box">
+                    <div class="recent_prodt_img">
+                        <img src="../../images/img_recent_product.jpg" alt="">
+                    </div>
+                    <div class="recent_prodt_txt">
+                        <p>[필립스]</p>
+                        <p class="prodt_name">핸디형 청소기</p>
+
+                        <div class="order_info">
+                            <p>주문번호 <span>00111</span></p>
+                            <p>교환수량 <span>1개</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_wrap">
+                    <a href="javascript:void(0);" class="btn_delivery"><span>배송 조회하기</span></a>
+                </div>
+            </li>
+            <li>
+                <div class="recent_prodt_box">
+                    <div class="recent_prodt_img">
+                        <img src="../../images/img_recent_product.jpg" alt="">
+                    </div>
+                    <div class="recent_prodt_txt">
+                        <p>[필립스]</p>
+                        <p class="prodt_name">핸디형 청소기</p>
+
+                        <div class="order_info">
+                            <p>주문번호 <span>00111</span></p>
+                            <p>교환수량 <span>1개</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn_wrap">
+                    <a href="javascript:void(0);" class="btn_delivery"><span>배송 조회하기</span></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function selectBox(){
+        var select = $('.select_box');
+        var selectAnchor = $('.select_box .select_value');
+        var selectValue = $('.select_box .select_list a');
+
+        $(selectAnchor).on('click', function(){
+            if(!$(this).parents(select).hasClass('on')){
+                $(select).addClass('on');
+            }else{
+                $(select).removeClass('on');
+            }
+
+            $('body').on('click',function(e){
+                if($(e.target).closest(select).length === 0 && $(select).hasClass('on')){
+                    $(select).removeClass('on');
+                }
+            })
+        });
+
+        $(selectValue).on('click', function(){
+            var $item = $(this);
+            var $val = $item.text();
+
+            $item.parents(select).find('.select_value span').text($val);
+            $(select).removeClass('on');
+        });
+    }
+
+    selectBox();
+</script>
+</body>
+</html>

@@ -51,54 +51,55 @@
             <div class="prodt_detail">
                 <ul class="prodt_tab">
                     <!-- [D] 해당 정보 클릭시 on class 추가 -->
-                    <li class="on"><a href="javascript:void(0);"><span>상세정보</span></a></li>
-                    <li><a href="javascript:void(0);"><span>제품평(263개)</span></a></li>
+                    <li><a href="javascript:void(0);"><span>상세정보</span></a></li>
+                    <li class="on"><a href="javascript:void(0);"><span>제품평(263개)</span></a></li>
                 </ul>
                 <div class="prodt_tab_cont">
-                    <div class="editor_prodt">
-                        <img src="../../images/img_editor_detail.jpg" alt="제품 상세">
-                    </div>
-                    <div class="gray_box">
-                        <strong>다른 고객님들이 같이 본 상품</strong>
-                        <ul class="prodt_list">
+                    <div class="reply_wrap">
+                        <ul>
+                            <!-- [D] 상품평은 li 기준으로 생성 -->
                             <li>
-                                <a href="javascript:void(0);">
-                                    <img src="../../images/img_together01.jpg" alt="">
-                                    <div class="prodt_txt">
-                                        <strong>[밀리홈]</strong>
-                                        <p>베네타 구스이불 베개커버 세트 지기베네타 구스이불 베개커버 세트 지기베네타 구스이불 베개커버 세트 지기베네타 구스이불 베개커버 세트 지기</p>
-                                    </div>
-                                </a>
+                                <div class="reply_mask">
+                                    <img src="../../images/img_dummy.jpg" alt="고객 이미지">
+                                </div>
+                                <div class="reply_txt_box">
+                                    <span class="reply_id">hkSO***</span><span class="p_satisfy">4.0</span>
+                                    <p class="reply_txt">너무 좋은 것 같아요. 다음에도 재구매 할 거에요! 다들 부모님 선물로 해보는 건 어떨까요!! </p>
+                                </div>
+                                <span class="reply_date">2019.11.19</span>
                             </li>
                             <li>
-                                <a href="javascript:void(0);">
-                                    <img src="../../images/img_together02.jpg" alt="">
-                                    <div class="prodt_txt">
-                                        <strong>[에스모도]</strong>
-                                        <p>259 고급 초음파 무드등 가습기</p>
-                                    </div>
-                                </a>
+                                <div class="reply_mask">
+                                    <img src="../../images/img_dummy.jpg" alt="고객 이미지">
+                                </div>
+                                <div class="reply_txt_box">
+                                    <span class="reply_id">hkSO***</span><span class="p_satisfy">4.0</span>
+                                    <p class="reply_txt">너무 좋은 것 같아요. 다음에도 재구매 할 거에요! 다들 부모님 선물로 해보는 건 어떨까요!! </p>
+                                </div>
+                                <span class="reply_date">2019.11.19</span>
                             </li>
                             <li>
-                                <a href="javascript:void(0);">
-                                    <img src="../../images/img_together01.jpg" alt="">
-                                    <div class="prodt_txt">
-                                        <strong>[밀리홈]</strong>
-                                        <p>베네타 구스이불 베개커버 세트 지기</p>
-                                    </div>
-                                </a>
+                                <div class="reply_mask">
+                                    <img src="../../images/img_dummy.jpg" alt="고객 이미지">
+                                </div>
+                                <div class="reply_txt_box">
+                                    <span class="reply_id">hkSO***</span><span class="p_satisfy">4.0</span>
+                                    <p class="reply_txt">너무 좋은 것 같아요. 다음에도 재구매 할 거에요! 다들 부모님 선물로 해보는 건 어떨까요!! </p>
+                                </div>
+                                <span class="reply_date">2019.11.19</span>
                             </li>
                             <li>
-                                <a href="javascript:void(0);">
-                                    <img src="../../images/img_together02.jpg" alt="">
-                                    <div class="prodt_txt">
-                                        <strong>[에스모도]</strong>
-                                        <p>259 고급 초음파 무드등 가습기</p>
-                                    </div>
-                                </a>
+                                <div class="reply_mask">
+                                    <img src="../../images/img_dummy.jpg" alt="고객 이미지">
+                                </div>
+                                <div class="reply_txt_box">
+                                    <span class="reply_id">hkSO***</span><span class="p_satisfy">4.0</span>
+                                    <p class="reply_txt">너무 좋은 것 같아요. 다음에도 재구매 할 거에요! 다들 부모님 선물로 해보는 건 어떨까요!! </p>
+                                </div>
+                                <span class="reply_date">2019.11.19</span>
                             </li>
                         </ul>
-                    </div>                    
+                    </div>
                 </div>
             </div>
             <div class="prodt_btn_wrap">
@@ -112,21 +113,13 @@
 </div>
 
 <script>
-    var swiper = new Swiper('prodt_slide', {
+    var swiper = new Swiper('swiper-container', {
         pagination: {
-            slidesPerView: 1,
+            // slidesPerView: 1,
             pagination : 'pagination',
             paginationClickable : true,
             bulletClass : 'bul',
             bulletActiveClass : 'bul_active'
-        }
-    });
-
-    $(document).ready(function(){
-        var detailEditor = $('.editor_prodt');
-
-        if($(detailEditor).find("img")){
-            $(detailEditor).css('padding', '0');
         }
     });
 </script>
