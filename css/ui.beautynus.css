@@ -4268,7 +4268,7 @@ button.swiper-pagination-bullet {
 .prodt_wrap .reply_wrap li .reply_date{position: absolute; top: 20px; right: 0;}
 
 /* 상품평이 없을 경우 */
-.prodt_wrap .nodata_wrap{position: relative; width: 100%; min-height: calc(100vh - 430px); background-color: #f3f4fc; text-align: center;}
+.prodt_wrap .nodata_wrap{position: relative; width: 100%; min-height: calc(100vh - 399px); background-color: #f3f4fc; text-align: center;}
 .prodt_wrap .nodata_wrap p{position: absolute; top: 50%; left: 50%; margin-top: -24px; font-size: 16px;font-weight: bold;color: #665991; transform: translate(-50%, -50%);}
 .prodt_wrap.premium .nodata_wrap{background-color: #ebe6e3;}
 .prodt_wrap.premium .nodata_wrap p{color: #8a7264;}
@@ -4300,7 +4300,7 @@ button.swiper-pagination-bullet {
 .recent_list .btn_wrap .btn_delivery{display: block; position: relative; width: 100%; text-align: center; font-size: 16px; line-height: 2.65; color: #000; background-color: #c4c7ef; border-radius: 6px;}
 .recent_list .btn_wrap .btn_delivery::after{content: "";position: absolute;right: 10px;bottom: 10px;width: 8px;height: 8px;background: url('../images/btn_delivery.png')0 0 no-repeat; background-size: 8px;}
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 320px) {
   .prodt_wrap .nodata_wrap{min-height: calc(100vh - 399px);}
-}
+} */
 /* //200106 기프트샵 상품페이지 - 이소연 */
