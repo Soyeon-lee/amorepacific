@@ -4283,7 +4283,7 @@ button.swiper-pagination-bullet {
 .myrecent_wrap .recent_sort{margin: 9px 13px;}
 .myrecent_wrap .recent_sort::after{content: "";display: block;clear: both;}
 .myrecent_wrap .recent_sort .select_box{float: right; min-width: 93px;height: 24px;background: #35528e url('../images/btn_select.png')88px center no-repeat; background-size: 10px 6px;border-radius: 3px;}
-.myrecent_wrap .recent_sort .select_box select{padding:0 25px 0 20px;background: transparent;font-size: 13px;line-height: 1.8;text-align: center;color: #fff;}
+.myrecent_wrap .recent_sort .select_box select{width: 100%;height: 100%;padding:0 25px 0 20px;background: transparent;font-size: 13px;line-height: 1.7;text-align: center;color: #fff;}
 .myrecent_wrap .recent_sort .select_box option{color: #000;}
 
 .myrecent_wrap .recent_list li{background-color: #fff;}
