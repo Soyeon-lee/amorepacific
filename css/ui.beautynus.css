@@ -4236,6 +4236,7 @@ button.swiper-pagination-bullet {
 .prodt_wrap .prodt_tab li.on a::after{background-color: #35528f;}
 .prodt_wrap .prodt_tab_cont .editor_prodt{text-align: center;}
 .prodt_wrap .prodt_tab_cont .gray_box{padding: 17px 25px 77px; margin-top: -2px; background-color: #eee;}
+.prodt_wrap .prodt_tab_cont .gray_box strong{font-family: 'DroidSans','DroidSansFallback','Helvetica',sans-serif;}
 .prodt_wrap .prodt_tab_cont .gray_box .prodt_list{margin-top: 8px;}
 .prodt_wrap .prodt_tab_cont .gray_box .prodt_list::after{content: "";display: block;clear: both;}
 .prodt_wrap .prodt_tab_cont .gray_box .prodt_list li{position: relative;float: left;overflow: hidden; width: calc(50% - 5px);margin:7px 0 0 10px;border-radius: 5px;}
@@ -4246,7 +4247,7 @@ button.swiper-pagination-bullet {
 .prodt_wrap .prodt_btn_wrap{position: fixed;bottom: 0;left: 0;width: 100%;}
 .prodt_wrap .prodt_btn_wrap::before{content: "";position: absolute;top: 0;left: 50%;width: 1px;height: 100%;background-color: #fff;}
 .prodt_wrap .prodt_btn_wrap::after{content: "";display: block;content: "";}
-.prodt_wrap .prodt_btn_wrap .btn{float: left; width: 50%; font-size: 16px; line-height: 3;color: #1d1102;background-color: #c4c7ef;}
+.prodt_wrap .prodt_btn_wrap .btn{float: left; width: 50%; font-size: 16px; line-height: 3;color: #1d1102;background-color: #c4c7ef;font-family: 'DroidSans','DroidSansFallback','Helvetica',sans-serif;}
 .prodt_wrap .prodt_btn_wrap .btn[disabled]{background-color: #a0a0a0;}
 
 /* 프리미엄 샵 */
