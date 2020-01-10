@@ -4220,12 +4220,12 @@ button.swiper-pagination-bullet {
 .prodt_wrap .prodt_slide{position:relative;}
 .prodt_wrap .prodt_slide .swiper-slide{touch-action: manipulation;}
 .prodt_wrap .prodt_slide .prodt_img img{vertical-align: top; width: 100%;}
-.prodt_wrap .prodt_slide .pagination {position:absolute;bottom:17px;left:0;width:100%!important;text-align:center;z-index: 1;}
-.prodt_wrap .prodt_slide .pagination .bul {display:inline-block;overflow:hidden;width:6px;height:6px;border-radius:50%;background-color:#7d7d7d;}
-.prodt_wrap .prodt_slide .pagination .bul + .bul {margin-left:8px;}
-.prodt_wrap .prodt_slide .pagination .bul_active {background-color: #000;}
+.prodt_wrap .prodt_slide .pagination{position:absolute;bottom:17px;left:0;width:100%!important;text-align:center;z-index: 1;}
+.prodt_wrap .prodt_slide .pagination .bul{display:inline-block;overflow:hidden;width:6px;height:6px;border-radius:50%;background-color:#7d7d7d;}
+.prodt_wrap .prodt_slide .pagination .bul + .bul{margin-left:8px;}
+.prodt_wrap .prodt_slide .pagination .bul_active{background-color: #000;}
 .prodt_wrap .prodt_info{padding: 33px 23px 38px;border-top: 1px solid #eee;border-bottom: 1px solid #eee;font-size: 15px;font-weight: bold;line-height: normal;color: #464646;}
-.prodt_wrap .prodt_info strong{font-weight: bold;}
+.prodt_wrap .prodt_info strong{font-weight: bold;font-family: 'DroidSans','DroidSansFallback','Helvetica',sans-serif;}
 .prodt_wrap .prodt_info .prodt_name{text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
 .prodt_wrap .p_satisfy{margin-top: 5px; font-size: 10px; font-weight: bold; color: #5d8bd7; word-break: keep-all; word-wrap: break-word;}
 .prodt_wrap .p_satisfy::before{content: "";display: inline-block;vertical-align:-1px;width: 10px;height: 10px;margin-right:3px;background: url(../images/ico/ico_satisfy.png)0 0 no-repeat;background-size: 10px;}
@@ -4268,8 +4268,8 @@ button.swiper-pagination-bullet {
 .prodt_wrap .reply_wrap li .reply_date{position: absolute; top: 20px; right: 0;}
 
 /* 상품평이 없을 경우 */
-.prodt_wrap .nodata_wrap{position: relative; display: table; width: 100%; height: calc(100vh - 399px); background-color: #f3f4fc; text-align: center;}
-.prodt_wrap .nodata_wrap p{display: table-cell;vertical-align: middle; font-size: 16px;font-weight: bold;color: #665991;}
+.prodt_wrap .nodata_wrap{position: relative; width: 100%; height: calc(100vh - 399px); background-color: #f3f4fc; text-align: center;}
+.prodt_wrap .nodata_wrap p{margin-top: 56px; font-size: 16px;font-weight: bold;color: #665991;}
 .prodt_wrap.premium .nodata_wrap{background-color: #ebe6e3;}
 .prodt_wrap.premium .nodata_wrap p{color: #8a7264;}
 
