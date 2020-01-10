@@ -4269,7 +4269,7 @@ button.swiper-pagination-bullet {
 
 /* 상품평이 없을 경우 */
 .prodt_wrap .nodata_wrap{position: relative; width: 100%; height: calc(100vh - 399px); background-color: #f3f4fc; text-align: center;}
-.prodt_wrap .nodata_wrap p{margin-top: 56px; font-size: 16px;font-weight: bold;color: #665991;}
+.prodt_wrap .nodata_wrap p{padding-top: 56px; font-size: 16px;font-weight: bold;color: #665991;}
 .prodt_wrap.premium .nodata_wrap{background-color: #ebe6e3;}
 .prodt_wrap.premium .nodata_wrap p{color: #8a7264;}
 
