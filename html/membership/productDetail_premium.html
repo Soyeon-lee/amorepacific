@@ -101,12 +101,12 @@
                     </div>                    
                 </div>
             </div>
-            <div class="prodt_btn_wrap">
-                <!-- [D] 비로그인 했을 경우 disabled 추가
-                    로그인 했을 경우 해당 기능이 가능하면 disabled 삭제 -->
-                <button type="button" class="btn" disabled><span>교환하기</span></button>
-                <button type="button" class="btn" disabled><span>리뷰쓰기</span></button>
-            </div>
+        </div>
+        <div class="prodt_btn_wrap">
+            <!-- [D] 비로그인 했을 경우 disabled 추가
+                로그인 했을 경우 해당 기능이 가능하면 disabled 삭제 -->
+            <button type="button" class="btn" disabled><span>교환하기</span></button>
+            <button type="button" class="btn" disabled><span>리뷰쓰기</span></button>
         </div>
     </div>
 </div>
@@ -116,16 +116,6 @@
         pagination : $('.swiper-container').siblings('.pagination'),
         bulletClass: 'bul',
         bulletActiveClass: 'bul_active'
-    });
-
-    $(document).ready(function(){
-        var detailEditor = $('.editor_prodt');
-
-        if($(detailEditor).children().find("img")){
-            $(detailEditor).css('padding', '0');
-        }else{
-            $(detailEditor).css('padding', '15px 0 18px');
-        }
     });
 </script>
 
