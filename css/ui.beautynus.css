@@ -4216,7 +4216,7 @@ button.swiper-pagination-bullet {
 /* //191118 뷰티엔젤 멤버십 신규추가 - 정경진 */
 
 /* 200106 기프트샵 상품페이지 - 이소연 */
-.prodt_wrap{position:relative;background-color: #fff;-webkit-overflow-scrolling: touch;font-family: 'DroidSans','DroidSansFallback','Helvetica',sans-serif;}
+.prodt_wrap{position:relative;height: 100%; background-color: #fff;-webkit-overflow-scrolling: touch;font-family: 'DroidSans','DroidSansFallback','Helvetica',sans-serif;}
 .prodt_wrap .prodt_slide{position:relative;}
 .prodt_wrap .prodt_slide .swiper-slide{touch-action: manipulation;}
 .prodt_wrap .prodt_slide .prodt_img img{vertical-align: top; width: 100%;}
@@ -4268,8 +4268,8 @@ button.swiper-pagination-bullet {
 .prodt_wrap .reply_wrap li .reply_date{position: absolute; top: 20px; right: 0;}
 
 /* 상품평이 없을 경우 */
-.prodt_wrap .nodata_wrap{position: relative; width: 100%; height: calc(100vh - 399px); background-color: #f3f4fc; text-align: center;}
-.prodt_wrap .nodata_wrap p{padding-top: 56px; font-size: 16px;font-weight: bold;color: #665991;}
+.prodt_wrap .nodata_wrap{position: relative; width: 100%; height: calc(100vh - 407px); background-color: #f3f4fc; text-align: center;}
+.prodt_wrap .nodata_wrap p{position: absolute; top: 50%; left: 50%; margin-top: -24px; font-size: 16px;font-weight: bold;color: #665991; transform: translate(-50%, -50%);}
 .prodt_wrap.premium .nodata_wrap{background-color: #ebe6e3;}
 .prodt_wrap.premium .nodata_wrap p{color: #8a7264;}
 
