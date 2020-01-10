@@ -4300,7 +4300,7 @@ button.swiper-pagination-bullet {
 .recent_list .btn_wrap .btn_delivery{display: block; position: relative; width: 100%; text-align: center; font-size: 16px; line-height: 2.65; color: #000; background-color: #c4c7ef; border-radius: 6px;}
 .recent_list .btn_wrap .btn_delivery::after{content: "";position: absolute;right: 10px;bottom: 10px;width: 8px;height: 8px;background: url('../images/btn_delivery.png')0 0 no-repeat; background-size: 8px;}
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   .prodt_wrap .nodata_wrap{min-height: calc(100vh - 399px);}
 }
 /* //200106 기프트샵 상품페이지 - 이소연 */
