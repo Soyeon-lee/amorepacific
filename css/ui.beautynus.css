@@ -4557,6 +4557,7 @@ button.swiper-pagination-bullet {
   margin-bottom: 10px;
   font-size: 15px;
   font-weight: bold;
+  font-family: 'DroidSans','DroidSansFallback','Helvetica',sans-serif;
 }
 .myrct_tab_cont .recent_wrap .recent .txt_box li{
   font-size: 13px;
