@@ -4260,7 +4260,6 @@ button.swiper-pagination-bullet {
 .goods_info{
   padding: 33px 23px 38px;
   border-top: 1px solid #eee;
-  border-bottom: 1px solid #eee;
   font-size: 15px;
   font-weight: bold;
   line-height: normal;
@@ -4523,7 +4522,7 @@ button.swiper-pagination-bullet {
   font-size: 13px;
   color: #fff;
   background-image: url('../images/btn_select.png');
-  background-position: 88px center;
+  background-position: 85px center;
   background-repeat: no-repeat;
   background-size: 10px 6px;
 }
