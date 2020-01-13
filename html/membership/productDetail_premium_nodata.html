@@ -16,24 +16,21 @@
 <body>
 
 <div id="wrap">
-    <div class="prodt_wrap premium">
-        <div class="prodt_slide">
+	<!-- [D] 프리미엄관 일 경우 premium 추가
+			 제품평이 없을 경우 nodata 추가 -->
+    <div class="goods_wrap premium nodata">
+        <!-- 상단 slide 영역 -->
+        <div class="goods_slide_wrap">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="prodt_img">
-                            <img src="../../images/img_product01.jpg" alt="상품상세 이미지">
-                        </div>
+                        <img src="../../images/img_product01.jpg" alt="상품 이미지">
                     </div>
                     <div class="swiper-slide">
-                        <div class="prodt_img">
-                            <img src="../../images/img_product02.jpg" alt="상품상세 이미지">
-                        </div>
+                        <img src="../../images/img_product02.jpg" alt="상품 이미지">
                     </div>
                     <div class="swiper-slide">
-                        <div class="prodt_img">
-                            <img src="../../images/img_product03.jpg" alt="상품상세 이미지">
-                        </div>
+                        <img src="../../images/img_product03.jpg" alt="상품 이미지">
                     </div>
                 </div>
             </div>
@@ -42,30 +39,26 @@
                 <span class="bul bul_active"></span>
             </div>
         </div>
-        <div class="prodt_cont">
-            <div class="prodt_info">
-                <p>[필립스]</p>
-                <p class="prodt_name">핸디형 청소기</p>
-                <p class="p_satisfy">4.0</p>
-            </div>
-            <div class="prodt_detail">
-                <ul class="prodt_tab">
-                    <!-- [D] 해당 정보 클릭시 on class 추가 -->
-                    <li><a href="javascript:void(0);"><span>상세정보</span></a></li>
-                    <li class="on"><a href="javascript:void(0);"><span>제품평(263개)</span></a></li>
-                </ul>
-                <div class="prodt_tab_cont">
-                    <!-- [D] 제품평이 없을 경우 -->
-                    <div class="nodata_wrap">
-                        <p>현재 제품평이 없어요!</p>
-                    </div>
-                    <!--// [D] 제품평이 없을 경우 -->
-                </div>
+        <!--// 상단 slide 영역 -->
+        <div class="goods_info">
+            <p class="goods_tit">[필립스] 핸디형 청소기 [필립스] 핸디형 청소기 [필립스] 핸디형 청소기 [필립스] 핸디형 청소기 [필립스] 핸디형 청소기</p>
+            <p class="g_satisfy">4.0</p>
+        </div>
+        <div class="goods_cont">
+            <ul class="goods_tab">
+                <li><a href="javascript:void(0);"><span>상세정보</span></a></li>
+                <li class="on"><a href="javascript:void(0);"><span>제품평(263개)</span></a></li>
+            </ul>
+            <div class="goods_tab_cont">
+				<!-- [D] 상품평이 없을 경우 -->
+				<div class="no_comment_wrap">
+					<p>현재 제품평이 없어요!</p>
+				</div>
             </div>
         </div>
-        <div class="prodt_btn_wrap">
-            <!-- [D] 비로그인 했을 경우 disabled 추가
+        <!-- [D] 비로그인 했을 경우 disabled 추가
                 로그인 했을 경우 해당 기능이 가능하면 disabled 삭제 -->
+        <div class="btn_wrap">
             <button type="button" class="btn" disabled><span>교환하기</span></button>
             <button type="button" class="btn" disabled><span>리뷰쓰기</span></button>
         </div>
