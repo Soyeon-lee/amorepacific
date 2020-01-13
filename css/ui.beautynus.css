@@ -4465,6 +4465,7 @@ button.swiper-pagination-bullet {
   background-color: #f3f4fc;
 }
 .goods_wrap.nodata .no_comment_wrap p{
+  margin-top: -12px;
   padding-top: 25%;
   font-size: 16px;
   font-weight: bold;
