@@ -4416,7 +4416,7 @@ button.swiper-pagination-bullet {
 .goods_wrap.premium .goods_cont .goods_tab li.on a{
   border-bottom: 1px solid #8a7264;
 }
-.goods_wrap .btn_wrap .btn{
+.goods_wrap.premium .btn_wrap .btn{
   color: #fff;
   background-color: #8a7264;
 }
@@ -4480,4 +4480,132 @@ button.swiper-pagination-bullet {
   color: #8a7264;
 }
 /* 마이페이지 */
+.myrct_wrap{
+  position: relative;
+  min-height: 100vh;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'DroidSans','DroidSansFallback','Helvetica',sans-serif;
+  background-color: #f4f4f4;
+}
+.myrct_tab li{
+  float: left;
+  width: 33.33%;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+.myrct_tab li a{
+  display: block;
+  padding: 9px 0;
+  text-align: center;
+}
+.myrct_tab li.on{
+  font-weight: bold;
+  border-bottom: 1px solid #3e459f;
+}
+.sort_wrap{
+  padding: 10px 13px;
+}
+.sort_wrap::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.sort_wrap .select_box{
+  min-width: 94px;
+  background-color: #35528e;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.sort_wrap .select_box select{
+  height: 24px;
+  padding: 0 20px;
+  font-size: 13px;
+  color: #fff;
+  background-image: url('../images/btn_select.png');
+  background-position: 88px center;
+  background-repeat: no-repeat;
+  background-size: 10px 6px;
+}
+.myrct_tab_cont .select_box select option{
+  background-color: #fff;
+  color: #000;
+}
+.myrct_tab_cont .recent_wrap .recent{
+  position: relative;
+  margin-bottom: 63px;
+  padding: 22px 25px 25px;
+  background-color: #fff;
+}
+.myrct_tab_cont .recent_wrap .recent > div{
+  display: inline-block;
+  vertical-align: middle;
+}
+.myrct_tab_cont .recent_wrap .recent .img_box{
+  width: 95px;
+  height: 95px;
+  border: 1px solid #cfc8b5;
+}
+.myrct_tab_cont .recent_wrap .recent .img_box img{
+  vertical-align: middle;
+  width: 100%;
+}
+.myrct_tab_cont .recent_wrap .recent .txt_box{
+  margin-left: 10px;
+}
+.myrct_tab_cont .recent_wrap .recent .txt_box strong{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.myrct_tab_cont .recent_wrap .recent .txt_box li{
+  font-size: 13px;
+  color: #646464;
+}
+.myrct_tab_cont .recent_wrap .recent .txt_box li > span{
+  margin-left: 10px;
+}
+.myrct_tab_cont .recent_wrap .recent .btn_deli{
+  position: absolute;
+  bottom: -37px;
+  left: 0;
+  width: 100%;
+  padding: 11px 0;
+  color: #000;
+  background-color: #c4c7ef;
+  border-radius: 5px;
+  text-align: center;
+  line-height: normal;
+}
+.myrct_tab_cont .recent_wrap .recent .btn_deli::after{
+  content: '';
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 8px;
+  height: 8px;
+  background: url('../images/btn_delivery.png') 0 0 no-repeat;
+  background-size: 8px;
+}
+/* 교환상품 정보 없는 경우 */
+.myrct_wrap .recent_wrap .no_recent_wrap{
+  margin-top: 50%;
+}
+.myrct_wrap .recent_wrap .no_recent_wrap::before{
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  background: url('../images/ico/ico_nodata.png') center no-repeat;
+  background-size: 34px;
+}
+.myrct_wrap .recent_wrap .no_recent_wrap p{
+  margin-top: 13px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #616161;
+  text-align: center;
+}
 /* //200106 기프트샵 상품페이지 - 이소연 */

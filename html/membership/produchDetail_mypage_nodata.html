@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>마이페이지 | 판촉주문현황 | BEAUTYNUS</title>
+	<link rel="stylesheet" href="../../css/ui.beautynus.css">
+	<link rel="stylesheet" href="../../css/jquery-ui.1.10.3.css">	
+	<script src="../../js/polyfill.js"></script>
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/ui.beautynus.js"></script>
+	<script src="../../js/swiper.jquery.umd.min.js"></script>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div class="myrct_wrap">
+		<div class="myrct_tab_wrap">
+			<ul class="myrct_tab clearfix">
+				<!-- [D] 활성되는 tab에 on class 추가 -->
+				<li><a href="javascript:void(0);"><span>최근1개월</span></a></li>
+				<li class="on"><a href="javascript:void(0);"><span>최근3개월</span></a></li>
+				<li><a href="javascript:void(0);"><span>최근6개월</span></a></li>
+			</ul>
+			<div class="myrct_tab_cont">
+				<div class="sort_wrap">
+					<div class="fr">
+						<div class="select_box">
+							<select title="주문현황 선택">
+								<option value="">사은품샵</option>
+								<option value="">프리미엄관</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="recent_wrap">
+                    <!-- [D] 교환상품 정보 없는 경우 -->
+                    <div class="no_recent_wrap">
+                        <p>교환한 상품 정보가 없습니다</p>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
