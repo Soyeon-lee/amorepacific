@@ -2242,8 +2242,8 @@ ul.note li.item + li.item {
   text-align:center; }
 
 /* 나의 등급 */
-.grade-of-brand {
-  /* 꼭 알아두세요 */ }
+.grade-of-brand {}
+/* 꼭 알아두세요 */
 .grade-of-brand.sulwhasoo .n {
   color: #d17d3c; }
 .grade-of-brand.sulwhasoo .grade-area.normal {
