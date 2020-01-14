@@ -4534,9 +4534,8 @@ button.swiper-pagination-bullet {
   color: #000;
 }
 .myrct_tab_cont .recent_wrap .recent{
-  /* position: relative; */
+  width: 100%;
   margin-bottom: 21px;
-  /* padding: 22px 25px 25px; */
   padding-top: 22px;
   background-color: #fff;
 }
@@ -4555,14 +4554,24 @@ button.swiper-pagination-bullet {
   width: 100%;
 }
 .myrct_tab_cont .recent_wrap .recent .txt_box{
+  width: calc(100% - 160px);
   margin: -18px 25px 0 10px;
 }
 .myrct_tab_cont .recent_wrap .recent .txt_box strong{
-  display: block;
-  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  justify-content: center;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   font-size: 15px;
   font-weight: bold;
   font-family: 'DroidSans','DroidSansFallback','Helvetica',sans-serif;
+}
+.myrct_tab_cont .recent_wrap .recent .txt_box ul{
+  margin-top: 10px;
 }
 .myrct_tab_cont .recent_wrap .recent .txt_box li{
   font-size: 13px;
