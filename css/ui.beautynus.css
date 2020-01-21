@@ -4230,6 +4230,7 @@ button.swiper-pagination-bullet {
   background-color: #fff;
 }
 .goods_slide_wrap .swiper-slide{
+  height: 229px;
   touch-action: manipulation;
 }
 .goods_slide_wrap .swiper-slide img{
@@ -4341,6 +4342,7 @@ button.swiper-pagination-bullet {
   position: relative;
   overflow: hidden;
   width: calc(50% - 4px);
+  min-height: 172px;
   margin: 7px 0 0 3px;
   border-radius: 5px;
 }
@@ -4477,7 +4479,7 @@ button.swiper-pagination-bullet {
 }
 .goods_wrap.nodata .no_comment_wrap p{
   margin-top: -12px;
-  padding-top: 25%;
+  padding: 25% 0;
   font-size: 16px;
   font-weight: bold;
   color: #665991;
