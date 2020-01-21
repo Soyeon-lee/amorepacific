@@ -4462,6 +4462,15 @@ button.swiper-pagination-bullet {
   top: 20px;
   right: 0;
 }
+.comment_wrap .comment .btn_review{
+  position: absolute;
+  right: 0;
+  bottom: 23px;
+  width: 14px;
+  height: 14px;
+  background: url('../images/btn_review.png') right 0 no-repeat;
+  background-size: 3px 14px;
+}
 /* 제품평이 없는 경우 */
 .goods_wrap.nodata{
   background-color: #f3f4fc;
@@ -4604,7 +4613,7 @@ button.swiper-pagination-bullet {
 /* 교환상품 정보 없는 경우 */
 .myrct_wrap .recent_wrap .no_recent_wrap{
   margin-top: 50%;
-}
+} b
 .myrct_wrap .recent_wrap .no_recent_wrap::before{
   content: '';
   display: block;
