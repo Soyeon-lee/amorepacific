@@ -4339,6 +4339,7 @@ button.swiper-pagination-bullet {
 }
 .hot_goods_wrap .hot_goods li{
   display: inline-block;
+  vertical-align: top;
   position: relative;
   overflow: hidden;
   width: calc(50% - 4px);
