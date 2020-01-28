@@ -4635,3 +4635,118 @@ button.swiper-pagination-bullet {
   text-align: center;
 }
 /* //200106 기프트샵 상품페이지 - 이소연 */
+
+/* 200128 Tablet 기프트샵 - 이소연 */
+@media screen and (min-width:768px) and (max-width:1668px){
+  body{
+    max-width: 1668px;
+    font-family: 'DroidSans','DroidSansFallback','Helvetica',sans-serif;
+  }
+  .tablet_wrap{}
+  .tablet_wrap .shop_tab{
+    min-width: 768px;
+    max-width: 1367px;
+    margin: 0 auto;
+  }
+  .tablet_wrap .shop_tab li{
+    display: inline-block;
+    margin: 0 25px;
+  }
+  .tablet_wrap .shop_tab li:before{
+    content: '';
+    width: 71px;
+    height: 74px;
+    background-image: url('../images/ico/ico_shop_tab01.png');
+    background-position: 0 center;
+    background-repeat: no-repeat;
+  }
+  .tablet_wrap .shop_tab li:nth-child(2):before{
+    background-image: url('../images/ico/ico_shop_tab02.png');
+  }
+  .tablet_wrap .shop_tab li:nth-child(3):before{
+    background-image: url('../images/ico/ico_shop_tab03.png');
+  }
+  .tablet_wrap .shop_tab li.on:before{
+    background-image: url('../images/ico/ico_shop_tab01_on.png');
+  }
+  .tablet_wrap .shop_tab li.on:nth-child(2):before{
+    background-image: url('../images/ico/ico_shop_tab02_on.png');
+  }
+  .tablet_wrap .shop_tab li.on:nth-child(3):before{
+    background-image: url('../images/ico/ico_shop_tab03_on.png');
+  }
+  .tablet_wrap .shop_tab li a{
+    min-width: 190px;
+    padding-top: 100px;
+    font-size: 41px;
+    color: #000;
+  }
+  .tablet_wrap .shop_tab li.on a{
+    font-weight: bold;
+  }
+  .tablet_wrap .info{
+    width: 100%;
+    background-color: #e7dfc8;
+  }
+  .tablet_wrap .info a{
+    display: block;
+    position: relative;
+    padding: 45px 86px;
+    font-size: 56px;
+  }
+  .tablet_wrap .info a > strong{
+    font-family: 'DroidSans','DroidSansFallback','Helvetica',sans-serif;
+    font-weight: bold;
+    color: #6f5406;
+  }
+  .tablet_wrap .info a::after{
+    content: '';
+    display: inline-block;
+    vertical-align: 2px;
+    width: 45px;
+    height: 45px;
+    margin-left: 14px;
+    background: url('../images/ico/ico_info.png') 0 0 no-repeat;
+  }
+  .tablet_wrap .cosmetic_wrap{
+    min-width: 768px;
+    max-width: 1367px;
+    margin: 100px auto;
+  }
+  .tablet_wrap .cosmetic_wrap li{
+    position: relative;
+    display: inline-block;
+    width: calc(25% - 4px);
+  }
+  .tablet_wrap .cosmetic_wrap li a{
+    display: block;
+    width: 207px;
+    height: 204px;
+    margin: 0 auto;
+    background-image: url('../images/ico/ico_menu01.png');
+    background-position: center 0;
+    background-repeat: no-repeat;
+  }
+  .tablet_wrap .cosmetic_wrap li:nth-child(2) a{
+    background-image: url('../images/ico/ico_menu02.png');
+  }
+  .tablet_wrap .cosmetic_wrap li:nth-child(3) a{
+    background-image: url('../images/ico/ico_menu03.png');
+  }
+  .tablet_wrap .cosmetic_wrap li:nth-child(4) a{
+    background-image: url('../images/ico/ico_menu04.png');
+  }
+  .tablet_wrap .cosmetic_wrap li.on a{
+    background-image: url('../images/ico/ico_menu01_on.png');
+  }
+  .tablet_wrap .cosmetic_wrap li.on:nth-child(2) a{
+    background-image: url('../images/ico/ico_menu02_on.png');
+  }
+  .tablet_wrap .cosmetic_wrap li.on:nth-child(3) a{
+    background-image: url('../images/ico/ico_menu03_on.png');
+  }
+  .tablet_wrap .cosmetic_wrap li.on:nth-child(4) a{
+    background-image: url('../images/ico/ico_menu04_on.png');
+  }
+}
+/* //200128 Tablet 기프트샵 - 이소연 */
