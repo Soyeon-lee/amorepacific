@@ -16,21 +16,36 @@
 <body>
 
 <div id="wrap">
+    <!-- [D] 사은품샵 : gift
+        프리미엄관 : premium -->
     <div class="tablet_wrap">
-        <ul class="shop_tab">
-            <li class="on"><a href="javascript:void(0);"><span>샘플샵</span></a></li>
-            <li><a href="javascript:void(0);"><span>사은품샵</span></a></li>
-            <li><a href="javascript:void(0);"><span>프리미엄관</span></a></li>
-        </ul>
-        <div class="info">
-            <a href="#Shopinfo"><strong>샘플샵</strong> 유의사항</a>
+        <!-- 샵 선택 -->
+        <div class="product_select">
+            <!-- [D] 해당 샵 선택시 li에 on class -->
+            <ul>
+                <li class="on"><a href="javascript:void(0);"><span>샘플샵</span></a></li>
+                <li><a href="javascript:void(0);"><span>사은품샵</span></a></li>
+                <li><a href="javascript:void(0);"><span>프리미엄관</span></a></li>
+            </ul>
         </div>
-        <ul class="cosmetic_wrap">
-            <li class="on"><a href="javascript:void(0);"><span class="blind">Sulwhasoo</span></a></li>
-            <li><a href="javascript:void(0);"><span class="blind">HERA</span></a></li>
-            <li><a href="javascript:void(0);"><span class="blind">AMOREPACIFIC</span></a></li>
-            <li><a href="javascript:void(0);"><span class="blind">primera</span></a></li>
-        </ul>
+        <!--// 샵 선택 -->
+        <!-- 유의사항 팝업 -->
+        <div class="info_box">
+            <p><strong>샘플샵</strong>유의사항 <a href="javascript:void(0);" class="ico_info"><span class="blind">사은품샵 유의사항 popup</span></a></p>
+        </div>
+        <!--// 유의사항 팝업 -->
+        <!-- 브랜드 선택 -->
+        <div class="brand_select">
+            <!-- [D] 해당 브랜드 선택시 li에 on class -->
+            <ul>
+                <li class="on"><a href="javascript:void(0);"><span class="blind">Sulwhasoo</span></a></li>
+                <li><a href="javascript:void(0);"><span class="blind">HERA</span></a></li>
+                <li><a href="javascript:void(0);"><span class="blind">AMOREPACIFIC</span></a></li>
+                <li><a href="javascript:void(0);"><span class="blind">primera</span></a></li>
+            </ul>
+        </div>
+        <!--// 브랜드 선택 -->
+        <!-- tab_wrap -->
         <div class="tab_wrap">
             <ul class="tab_head">
                 <li class="on">
@@ -133,8 +148,99 @@
                 <!-- //메이크업 탭 -->
             </div>
         </div>
+        <!--// tab_wrap -->
     </div>
 </div>
 
+<script>
+    $('.tab_wrap').each(function(){
+        var $this = $(this);
+        var tab = $this.find('.tab_head > li > a');
+        var activeTab = $this.find('.tab_head > li.on > a');
+		var activeTab2 = $this.find('.t_head > li.on > a');
+        var tabCont = $this.find('> .tab_content > .tab_cont');
+        var activetabCont = $this.find('> .tab_content > .tab_cont.on');
+        var tab_2depth = tabs.next().find('.t_head > li > a');
+
+        tab.click(function(){
+            
+        });
+
+    })
+    // tab_wrap3
+$('.tab_wrap3').each(function() {
+	var _this = $(this);
+	var tabs = _this.find('.tab_head > li > a'),
+		activeTab = _this.find('.tab_head > li.on > a'),
+		activeTab2 = _this.find('.t_head > li.on > a'),
+	tabsCont = _this.find('> .tab_content > .tab_cont'),
+	tabsContOn = _this.find('> .tab_content > .tab_cont.on'),
+	tab_2depth = tabs.next().find('.t_head > li > a');
+
+	// 1depth 클릭 시
+	tabs.click(function() {
+		if ($(this).parents('.tab_wrap3 ').attr('data-tabtype') == 'link') {
+			return
+		} else {
+			tabs.parent('li').removeClass('on');
+			$('.t_head > li > a').attr('title', '');
+
+			$(this).next('.tab_2depth').find('li').removeClass('on');
+			$(this).next('.tab_2depth').find('li').eq(0).addClass('on').find('a').attr('title',mfui._uiLangs.UI0001);
+			tabsContOn.removeClass('on');
+			tabsContOn.eq(0).addClass('on');
+			$(this).parent('li').addClass('on');
+			var idx = $(this).parent('li').index();
+			tabsCont.removeClass('on');
+			$(this).parents('.tab_wrap3').find('> .tab_content > .tab_cont').eq(idx).addClass('on');
+
+			if( $(this).parents('.tab_wrap3').find('> .tab_content > .tab_cont').eq(idx).find('.t_content') ){
+				$(this).parents('.tab_wrap3').find('> .tab_content > .tab_cont').eq(idx).find('.t_content .t_cont').removeClass('on')
+				$(this).parents('.tab_wrap3').find('> .tab_content > .tab_cont').eq(idx).find('.t_content .t_cont').eq(0).addClass('on');
+			}
+
+			tabs.attr('title', '');
+			$(this).attr('title', mfui._uiLangs.UI0001);
+
+			innerTabMenu();
+			// 예약안내 페이지에서 사용
+			if ($('.visual_slider_wrap').length > 0) {
+				infoSlider();
+			}
+
+			tabWrap3H(_this);
+		};
+	});
+
+	_this.each(function(){
+		tabWrap3H($(this));
+	});
+
+	_this.destroyHeight = function(){
+		$('.tab_wrap3:visible').find('> .tab_head > ul > li > a').attr('style','');
+	};
+
+	_this.autoHeight = function(){
+		$('.tab_wrap3:visible').each(function(){
+			_heiCont = $(this).find('> .tab_head > ul > li > a');
+			tabHeight = 0;
+
+			for(var i=0; i < _heiCont.length; i++){
+				if( i == 0 ){
+					tabHeight = $(_heiCont[i]).outerHeight();
+				}else{
+					if( tabHeight < $(_heiCont[i]).outerHeight() ){
+						tabHeight = $(_heiCont[i]).outerHeight();
+					};
+				};
+			};
+
+			_heiCont.css({'height':tabHeight+'px'});
+		});
+
+	};
+
+});
+</script>
 </body>
 </html>
