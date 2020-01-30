@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>탭</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <style>
+        .tabs a { background:#666; color:#fff; font-weight:bold; padding:10px; 
+                  border:solid 2px #fff;  display:inline-block; width:200px; 
+                  text-align: center; cursor: pointer;  }
+        .tabs a:hover { background:#c00; }
+        .tabs a.on { background:#c00; }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- 탭1 -->
+        <div class="tabs">
+            <a>첫번째메뉴</a>
+            <a>두번째메뉴</a>
+        </div>
+
+        <div class="panel">첫번째 패널<br/><br/><br/><br/><br/><br/><br/><br/><br/>끝</div>
+        <div class="panel">두번째 패널<br/><br/><br/><br/>끝</div>
+    </div>
+
+    <div>
+        <!-- 탭2 -->
+        <div class="tabs">
+            <a>첫번째메뉴</a>
+            <a>두번째메뉴</a>
+            <a>세번째메뉴</a>
+        </div>
+
+        <div class="panel">첫번째 패널<br/><br/><br/><br/><br/><br/><br/><br/><br/>끝</div>
+        <div class="panel">두번째 패널<br/><br/><br/><br/>끝</div>
+        <div class="panel">세번째 패널<br/><br/><br/><br/>끝</div>
+    </div>
+
+    <script>
+        $(".tabs").each(function(){
+            var tabs = $(this).find("a");
+            var panels = $(this).nextAll(".panel");
+    
+            tabs.on("click", function(){
+                var clk = $(this);
+                var idx = tabs.index(clk);
+                
+                // 아래쪽 탭 패널을 싹 안보이게 한다음 클릭한 순서에 해당하는 탭패널만 보여지게
+                panels.hide();
+                panels.eq(idx).show();
+    
+                // on 클래스를 싹 빼고 클릭한 a 에 on 클래스 추가
+                tabs.removeClass("on");
+                tabs.eq(idx).addClass("on");
+            });
+    
+            tabs.eq(0).click();
+        });
+
+        var TabMove = {
+            init : function(){
+                var _this = this;
+                _this.event();
+            },
+            event : function(){
+                var tabsHead = $('.tab_head > li > a');
+
+                tabsHead.click(function(){
+                    var $this = $(this);
+                    var $idx = $(this).tabsHead.index($this);
+                })
+            }
+        }
+    </script>
+</body>
+</html>

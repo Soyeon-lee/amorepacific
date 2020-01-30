@@ -32,7 +32,7 @@
         <!--// 샵 선택 -->
         <!-- 유의사항 팝업 -->
         <div class="info_box">
-            <p><strong>샘플샵</strong>유의사항 <a href="#InfoPop" class="ico_info btn_pop"><span class="blind">사은품샵 유의사항 popup</span></a></p>
+            <p><strong>샘플샵</strong>유의사항 <a href="#InfoPop1" class="ico_info btn_pop"><span class="blind">사은품샵 유의사항 popup</span></a></p>
         </div>
         <!--// 유의사항 팝업 -->
         <!-- 브랜드 선택 -->
@@ -49,14 +49,12 @@
         <!-- tab_wrap -->
         <div class="tab_wrap">
             <ul class="tab_head">
-                <li class="on">
-                    <a href="#none"><span>스킨케어</span></a>
-                </li>
-                <li><a href="#none"><span>메이크업</span></a></li>
+                <li><a href="#none"><span>스킨케어</span></a></li>
+                <li class="on"><a href="#none"><span>메이크업</span></a></li>
             </ul>
             <div class="tab_content">
                 <!-- 스킨케어 탭  -->
-                <div class="tab_cont on">
+                <div class="tab_cont">
                     <!-- tab_2depth 제목 추가 -->
                     <div class="tab_2depth">
                         <ul class="t_head">
@@ -72,63 +70,57 @@
                     <h4 class="blind">스킨케어</h4>
                     <!-- tab_2depth 내용 추가 -->
                     <div class="t_content">
-                        <div class="t_cont on">
-                            <div class="inner">
-                                <h5 class="blind">스킨/로션</h5>
-                                <ul class="goods_list">
-                                    <li>
-                                        <div class="txt_box">
-                                            <strong>자음수 5ml</strong>
-                                            <button type="button" class="btn_down"><span>쿠폰 다운로드</span></button>
-                                        </div>
-                                        <div class="img_box">
-                                            <img src="../../images/img_goods01.png" alt="">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="txt_box">
-                                            <strong>자음수 5ml</strong>
-                                            <button type="button" class="btn_down"><span>쿠폰 다운로드</span></button>
-                                        </div>
-                                        <div class="img_box">
-                                            <img src="../../images/img_goods01.png" alt="">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="txt_box">
-                                            <strong>자음수 5ml</strong>
-                                            <button type="button" class="btn_down"><span>쿠폰 다운로드</span></button>
-                                        </div>
-                                        <div class="img_box">
-                                            <img src="../../images/img_goods01.png" alt="">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="t_cont">
+                            <h5 class="blind">스킨/로션</h5>
+                            <!-- [D] 브랜드별 tab click 시 class add
+                                HERA : hera
+                                AMOREPACIFIC : amore
+                                primera : primera -->
+                            <ul class="goods_list">
+                                <li>
+                                    <div class="txt_box">
+                                        <strong>자음수 5ml</strong>
+                                        <button type="button" class="btn_down"><span>쿠폰 다운로드</span></button>
+                                    </div>
+                                    <div class="img_box">
+                                        <img src="../../images/img_goods01.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="txt_box">
+                                        <strong>자음수 5ml</strong>
+                                        <button type="button" class="btn_down"><span>쿠폰 다운로드</span></button>
+                                    </div>
+                                    <div class="img_box">
+                                        <img src="../../images/img_goods01.png" alt="">
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="txt_box">
+                                        <strong>자음수 5ml</strong>
+                                        <button type="button" class="btn_down"><span>쿠폰 다운로드</span></button>
+                                    </div>
+                                    <div class="img_box">
+                                        <img src="../../images/img_goods01.png" alt="">
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                         <div class="t_cont">
-                            <div class="inner">
-                                <h5 class="blind">에센스</h5>
-                                탭1 - 2번째 탭 내용
-                            </div>
+                            <h5 class="blind">에센스</h5>
+                            탭1 - 2번째 탭 내용
                         </div>
                         <div class="t_cont">
-                            <div class="inner">
-                                <h5 class="blind">크림</h5>
-                                탭1 - 3번째 탭 내용
-                            </div>
+                            <h5 class="blind">크림</h5>
+                            탭1 - 3번째 탭 내용
                         </div>
                         <div class="t_cont">
-                            <div class="inner">
-                                <h5 class="blind">선/마스크</h5>
-                                탭1 - 4번째 탭 내용
-                            </div>
+                            <h5 class="blind">선/마스크</h5>
+                            탭1 - 4번째 탭 내용
                         </div>
                         <div class="t_cont">
-                            <div class="inner">
-                                <h5 class="blind">기타</h5>
-                                탭1 - 5번째 탭 내용
-                            </div>
+                            <h5 class="blind">기타</h5>
+                            탭1 - 5번째 탭 내용
                         </div>
                     </div>
                     <!-- tab_2depth 내용 추가 -->
@@ -136,9 +128,11 @@
 
                 <!-- //스킨케어 탭  -->
                 <!-- 메이크업 탭 -->
-                <div class="tab_cont">
+                <div class="tab_cont on">
                     <h4 class="blind">메이크업</h4>
-                    2번째 탭
+                    <div class="no_data_wrap">
+                        <p>운영중인 샘플이 없어요!</p>
+                    </div>
                 </div>
                 <!-- //메이크업 탭 -->
             </div>
@@ -148,7 +142,7 @@
 </div>
 
 <!-- layerpopup -->
-<div class="tablet_layer_wrap" id="InfoPop">
+<div class="tablet_layer_wrap" id="InfoPop1">
     <div class="tablet_layer_pop">
         <div class="layer_inner">
             <div class="pop_cont">
@@ -166,18 +160,39 @@
 <!--// layerpopup -->
 
 <script>
-    //Tab
+    var tabletUI = {
+        init : function(){
+            if($('.tab_wrap').length){this.tabMenu.init();} //Tab
+            if($('.tablet_layer_wrap').length){this.layerPop.init();} //Layer popup
+        },
+        tabMenu : {
+            tabHead : '.tab_head > li',
+            tabHead2 : '.t_head > li',
+            tabCont : '.tab_content > .tab_cont',
+            tabCont2 : '.t_content > .t_cont',
+            init : function(){
+                var _this = this;
+                var $idx = 0; 
+                _this.event();
+            },
+            event : function(){
+                var _this = this;
+
+                $(_this.tabHead).on('click', function(){
+                    var $index = $(this).index(); // tabhead index
+                });
+            }
+        }
+    }
+
     var tabHead = $('.tab_head > li > a'); // 1depth head
     var tabHead2 = $('.t_head > li > a'); // 2depth head
     var tabCont = $('.tab_content > .tab_cont'); // 1depth cont
     var tabCont2 = $('.t_content > .t_cont'); // 2depth cont
 
     tabHead.click(function(){
-        if(tabHead.parent('li').hasClass('on')){
-            if($(this).find('.tab_2depth')){
+        $(this).parent('li').addClass('on').siblings('li').removeClass('on');
 
-            }
-        }
     })
 
     // layer popup
@@ -196,6 +211,5 @@
         $('.tablet_layer_wrap').removeClass('on');
     });
 </script>
-
 </body>
 </html>

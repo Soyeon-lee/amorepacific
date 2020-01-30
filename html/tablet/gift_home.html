@@ -5,8 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<title>사은품샵 | HOME | BEAUTYNUS</title>
-	<link rel="stylesheet" href="../../css/ui.beautynus.css">
-	<link rel="stylesheet" href="../../css/jquery-ui.1.10.3.css">	
+    <link rel="stylesheet" href="../../css/ui.beautynus.css">
+    <link rel="stylesheet" href="../../css/tablet.ui.beautynus.css">
+	<link rel="stylesheet" href="../../css/jquery-ui.1.10.3.css">
 	<script src="../../js/polyfill.js"></script>
 	<script src="../../js/jquery.js"></script>
 	<script src="../../js/ui.beautynus.js"></script>
@@ -30,11 +31,46 @@
         <!--// 샵 선택 -->
         <!-- 유의사항 팝업 -->
         <div class="info_box">
-            <p><strong>사은품샵</strong>유의사항 <a href="javascript:void(0);" class="ico_info"><span class="blind">사은품샵 유의사항 popup</span></a></p>
+            <p><strong>사은품샵</strong>유의사항 <a href="#InfoPop3" class="ico_info btn_pop"><span class="blind">사은품샵 유의사항 popup</span></a></p>
         </div>
         <!--// 유의사항 팝업 -->
+        <!-- 사은품 slide -->
+        <div class="gift_info_box">
+            <p><strong>이런 사은품은</strong>어떠세요?</p>
+            <div class="slide_box">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);">
+                                <span class="img">
+                                    <img src="../../images/img_slide.jpg" alt="">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--// 사은품 slide -->
     </div>
 </div>
+
+<!-- layerpopup -->
+<div class="tablet_layer_wrap" id="InfoPop3">
+    <div class="tablet_layer_pop">
+        <div class="layer_inner">
+            <div class="pop_cont">
+                <strong class="tit">[유의사항]</strong>
+                <p class="txt">*프리미엄관의 혜택은 올해 300/500만원 이상 구매하여 내년에 LUXURY/PRESTIGE 등급으로 승급하는 고객님들을 위해 제공됩니다.</p>
+                <p class="txt">*러닝되는 제품은 사전예고없이 상시변동될 수 있습니다.</p>
+                <p class="txt">*혜택교환은 연중 1회 가능합니다.</p>
+            </div>
+            <a href="#none" class="dim_close btn_close"><span class="blind">닫기</span></a>
+        </div>
+    </div>
+</div>
+<!--// layerpopup -->
+
 
 </body>
 </html>
