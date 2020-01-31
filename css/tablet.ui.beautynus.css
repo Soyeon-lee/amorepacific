@@ -2,7 +2,8 @@
 
 /* 200128 Tablet 기프트샵 - 이소연 */
 body{
-  max-width: 1024px;
+  min-width: 768px;
+  max-width: 100%;
   font-family: 'DroidSans','DroidSansFallback','Helvetica',sans-serif;
   color: #000;
   background-color: #fff;
@@ -410,6 +411,7 @@ body{
   left: 0;
   width: 100%;
   min-height: 112px;
+  background-color: #fff;
   z-index: 100;
 }
 .tablet_wrap .tablet_header .sub_tit{
@@ -518,5 +520,22 @@ body{
   border-bottom: 2px solid #8a7264;
 }
 /* 제품평 */
+.tablet_wrap .goods_cont .comment_wrap{
+  padding: 0 20px ;
+}
+.tablet_wrap
+.tablet_wrap
+.tablet_wrap
+.tablet_wrap
+
+/* 제품평이 없는 경우 */
+.tablet_wrap .goods_wrap.nodata{
+  background-color: #eff0f7;
+}
+.tablet_wrap .goods_wrap.nodata .no_comment_wrap p{
+  margin-top: 0;
+  font-size: 25px;
+  color: #4a5195;
+}
 
 /* //200128 Tablet 기프트샵 - 이소연 */ 
