@@ -349,7 +349,7 @@ body{
 .tablet_wrap.gift .slide_box{}
 .tablet_wrap.gift .slide_box .gift_slide{
     width: 732px;
-    height: ;
+    height: 100%;
     margin-right: 50px;
     background-color: #dcddf5;
     border-radius: 30px;

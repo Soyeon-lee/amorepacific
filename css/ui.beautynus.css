@@ -4567,6 +4567,7 @@ button.swiper-pagination-bullet {
   width: 100%;
 }
 .myrct_tab_cont .recent_wrap .recent .txt_box{
+  position: relative;
   width: calc(100% - 160px);
   margin: -18px 25px 0 10px;
 }
@@ -4592,6 +4593,15 @@ button.swiper-pagination-bullet {
 }
 .myrct_tab_cont .recent_wrap .recent .txt_box li > span{
   margin-left: 10px;
+}
+.myrct_tab_cont .recent_wrap .recent .txt_box .state{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 12px;
+  font-weight: bold;
+  color: #30549d;
+  text-align: right;
 }
 .myrct_tab_cont .recent_wrap .recent .btn_deli{
   display: block;
