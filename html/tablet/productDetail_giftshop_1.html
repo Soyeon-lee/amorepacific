@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>기프트샵 사은품샵 | 상품 상세 | BEAUTYNUS</title>
+    <link rel="stylesheet" href="../../css/ui.beautynus.css">
+    <link rel="stylesheet" href="../../css/tablet.ui.beautynus.css">
+	<link rel="stylesheet" href="../../css/jquery-ui.1.10.3.css">		
+	<script src="../../js/polyfill.js"></script>
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/ui.beautynus.js"></script>
+	<script src="../../js/swiper.jquery.umd.min.js"></script>
+</head>
+
+<body>
+
+<div id="wrap">
+    <div class="goods_wrap">
+        <!-- 상단 slide 영역 -->
+        <div class="goods_slide_wrap">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../../images/img_product01.jpg" alt="상품 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../images/img_product02.jpg" alt="상품 이미지">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../../images/img_product03.jpg" alt="상품 이미지">
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <!-- Swiper pagination 슬라이드 수에 맞게 자동 추가됨 -->
+                <span class="bul bul_active"></span>
+            </div>
+        </div>
+        <!--// 상단 slide 영역 -->
+        <div class="goods_info">
+            <p class="goods_tit">[필립스] 핸디형 청소기 [필립스] 핸디형 청소기 [필립스] 핸디형 청소기 [필립스] 핸디형 청소기 [필립스] 핸디형 청소기</p>
+            <p class="g_satisfy">4.0</p>
+        </div>
+        <div class="goods_cont">
+            <ul class="goods_tab">
+                <li class="on"><a href="javascript:void(0);"><span>상세정보</span></a></li>
+                <li><a href="javascript:void(0);"><span>제품평(263개)</span></a></li>
+            </ul>
+            <div class="goods_tab_cont">
+                <div class="goods_detail">
+                    <img src="../../images/img_editor_detail.jpg" alt="상품 상세 설명">
+                </div>
+            </div>
+        </div>
+        <!-- [D] 비로그인 했을 경우 disabled 추가
+                로그인 했을 경우 해당 기능이 가능하면 disabled 삭제 -->
+        <div class="btn_wrap">
+            <button type="button" class="btn" disabled><span>교환하기</span></button>
+            <button type="button" class="btn" disabled><span>리뷰쓰기</span></button>
+        </div>
+    </div>
+</div>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination : $('.swiper-container').siblings('.pagination'),
+        bulletClass: 'bul',
+        bulletActiveClass: 'bul_active'
+    });
+</script>
+
+</body>
+</html>

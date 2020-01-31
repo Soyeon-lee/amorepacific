@@ -61,9 +61,13 @@
         <div class="layer_inner">
             <div class="pop_cont">
                 <strong class="tit">[유의사항]</strong>
-                <p class="txt">*프리미엄관의 혜택은 올해 300/500만원 이상 구매하여 내년에 LUXURY/PRESTIGE 등급으로 승급하는 고객님들을 위해 제공됩니다.</p>
-                <p class="txt">*러닝되는 제품은 사전예고없이 상시변동될 수 있습니다.</p>
-                <p class="txt">*혜택교환은 연중 1회 가능합니다.</p>
+                <p class="txt">*당월 프로모션 기간 중 구매한 금액에 대해 당월에 1회 교환이 가능합니다. (익월교환불가)</p>
+                <p class="txt">*각 브랜드 구매금액을 합산한 총 금액 기준으로 사은품 교환이 가능합니다.</p>
+                <p class="txt">*나의 구매금액 외 금액대 사은품은 교환이 불가합니다.</p>
+                
+                <strong class="tit">[교환 및 환불정책]</strong>
+                <p class="txt">*구매제품 교환 및 반품시 사은품을 매장으로 함께 가져오셔야 정상교환/환불처리가 가능합니다.
+                <p class="txt">*기타문의사항은 뷰티포인트 고객센터로 연락해주시길 바랍니다. (https://www.beautypoint.co.kr/content/beautypoint/ko-kr/main.html)</p>
             </div>
             <a href="#none" class="dim_close btn_close"><span class="blind">닫기</span></a>
         </div>
@@ -71,6 +75,22 @@
 </div>
 <!--// layerpopup -->
 
+<script>
+    // layer popup
+    $('.btn_pop').click(function () {
+        var openLayerId = $(this).attr('href') ? $(this).attr('href') : $(this).data('pop');
+        var body = $('#wrap').parent(body);
 
+        $(openLayerId).addClass('on');
+        $(body).css('overflow', 'hidden');
+    });
+
+    $('.btn_close').click(function (){
+        var body = $('#wrap').parent(body);
+        
+        $(body).css('overflow', 'visible');
+        $('.tablet_layer_wrap').removeClass('on');
+    });
+</script>
 </body>
 </html>
