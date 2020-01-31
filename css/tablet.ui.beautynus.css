@@ -2,419 +2,521 @@
 
 /* 200128 Tablet 기프트샵 - 이소연 */
 body{
-    max-width: 1024px;
-    font-family: 'DroidSans','DroidSansFallback','Helvetica',sans-serif;
-    color: #000;
-    background-color: #fff;
+  max-width: 1024px;
+  font-family: 'DroidSans','DroidSansFallback','Helvetica',sans-serif;
+  color: #000;
+  background-color: #fff;
 }
-.tablet_wrap{}
+.tablet_wrap{
+  position: relative;
+}
 
 /* 샵 선택 */
 .tablet_wrap .product_select{
-    min-width: 768px;
-    margin: 40px auto 0;
-    text-align: center;
+  min-width: 768px;
+  margin: 40px auto 0;
+  text-align: center;
 }
 .tablet_wrap .product_select li{
-    position: relative;
-    display: inline-block;
-    padding-top: 50px;
-    margin: 0 45px;
-    font-size: 20px;
+  position: relative;
+  display: inline-block;
+  padding-top: 50px;
+  margin: 0 45px;
+  font-size: 20px;
 }
 .tablet_wrap .product_select li.on{
-    font-weight: bold;
+  font-weight: bold;
 }
 .tablet_wrap .product_select li a::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 36px;
-    background-image: url('../images/ico/ico_shop_tab01.png');
-    background-position: center 0;
-    background-repeat: no-repeat;
-    background-size: 36px;
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 36px;
+  background-image: url('../images/ico/ico_shop_tab01.png');
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: 36px;
 }
 .tablet_wrap .product_select li:nth-child(2) a::before{
-    background-image: url('../images/ico/ico_shop_tab02.png');
+  background-image: url('../images/ico/ico_shop_tab02.png');
 }
 .tablet_wrap .product_select li:nth-child(3) a::before{
-    background-image: url('../images/ico/ico_shop_tab03.png');
+  background-image: url('../images/ico/ico_shop_tab03.png');
 }
 .tablet_wrap .product_select li.on a::before{
-    background-image: url('../images/ico/ico_shop_tab01_on.png');
+  background-image: url('../images/ico/ico_shop_tab01_on.png');
 }
 .tablet_wrap .product_select li.on:nth-child(2) a::before{
-    background-image: url('../images/ico/ico_shop_tab02_on.png');
+  background-image: url('../images/ico/ico_shop_tab02_on.png');
 }
 .tablet_wrap .product_select li.on:nth-child(3) a::before{
-    background-image: url('../images/ico/ico_shop_tab03_on.png');
+  background-image: url('../images/ico/ico_shop_tab03_on.png');
 }
 .tablet_wrap .info_box{
-    width: 100%;
-    padding: 15px 42px;
-    margin-top: 30px;
-    font-size: 28px;
-    background-color: #e7dfc8;
+  width: 100%;
+  padding: 15px 42px;
+  margin-top: 30px;
+  font-size: 28px;
+  background-color: #e7dfc8;
 }
 .tablet_wrap .info_box strong{
-    margin-right: 5px;
-    font-weight: bold;
-    color: #6f5406;
+  margin-right: 5px;
+  font-weight: bold;
+  color: #6f5406;
 }
 .tablet_wrap .info_box .ico_info{
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    background: url('../images/ico/ico_info.png') 0 0 no-repeat;
-    background-size: 22px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url('../images/ico/ico_info.png') 0 0 no-repeat;
+  background-size: 22px;
 }
 
 /* 브랜드 선택 */
 .tablet_wrap .brand_select{
-    min-width: 768px;
-    margin: 50px auto 0;
-    padding: 0 50px;
-    box-sizing: border-box;
+  min-width: 768px;
+  margin: 50px auto 0;
+  padding: 0 50px;
+  box-sizing: border-box;
 }
 .tablet_wrap .brand_select li{
-    display: inline-block;
-    width: calc(25% - 4px);
-    text-align: center;
+  display: inline-block;
+  width: calc(25% - 4px);
+  text-align: center;
 }
 .tablet_wrap .brand_select li a{
-    display: inline-block;
-    width: 100%;
-    height: 103px;
-    background-image: url('../images/ico/ico_menu01.png');
-    background-position: center 0;
-    background-repeat: no-repeat;
-    background-size: contain;
+  display: inline-block;
+  width: 100%;
+  height: 103px;
+  background-image: url('../images/ico/ico_menu01.png');
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .tablet_wrap .brand_select li:nth-child(2) a{
-    background-image: url('../images/ico/ico_menu02.png');
+  background-image: url('../images/ico/ico_menu02.png');
 }
 .tablet_wrap .brand_select li:nth-child(3) a{
-    background-image: url('../images/ico/ico_menu03.png');
+  background-image: url('../images/ico/ico_menu03.png');
 }
 .tablet_wrap .brand_select li:nth-child(4) a{
-    background-image: url('../images/ico/ico_menu04.png');
+  background-image: url('../images/ico/ico_menu04.png');
 }
 .tablet_wrap .brand_select li.on a{
-    background-image: url('../images/ico/ico_menu01_on.png');
+  background-image: url('../images/ico/ico_menu01_on.png');
 }
 .tablet_wrap .brand_select li.on:nth-child(2) a{
-    background-image: url('../images/ico/ico_menu02_on.png');
+  background-image: url('../images/ico/ico_menu02_on.png');
 }
 .tablet_wrap .brand_select li.on:nth-child(3) a{
-    background-image: url('../images/ico/ico_menu03_on.png');
+  background-image: url('../images/ico/ico_menu03_on.png');
 }
 .tablet_wrap .brand_select li.on:nth-child(4) a{
-    background-image: url('../images/ico/ico_menu04_on.png');
+  background-image: url('../images/ico/ico_menu04_on.png');
 }
 .tablet_wrap .tab_wrap{
-    min-width: 768px;
-    padding: 0 40px;
-    margin: 50px auto 0;
-    box-sizing: border-box;
+  min-width: 768px;
+  padding: 0 40px;
+  margin: 50px auto 0;
+  box-sizing: border-box;
 }
 .tablet_wrap .tab_wrap .tab_head{
-    border-top: 3px solid #535353;
-    background-color: #e7dfc8;
+  border-top: 3px solid #535353;
+  background-color: #e7dfc8;
 }
 .tablet_wrap .tab_wrap .tab_head::after{
-    content: '';
-    display: block;
-    clear: both;
+  content: '';
+  display: block;
+  clear: both;
 }
 .tablet_wrap .tab_wrap .tab_head > li{
-    position: relative;
-    float: left;
-    width: 50%;
-    height: 50px;
-    font-weight: bold;
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 50px;
+  font-weight: bold;
 }
 .tablet_wrap .tab_wrap .tab_head > li > a{
-    display: block;
-    width:100%;
-    height:50px;
-    text-align: center;
-    font-size: 22px;
-    line-height: 2.3;
+  display: block;
+  width:100%;
+  height:50px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 2.3;
 }
 .tablet_wrap .tab_wrap .tab_head > li.on > a{
-    background-color: #fff;
+  background-color: #fff;
 }
 .tablet_wrap .tab_wrap .tab_head > li.on:first-child > a{
-    border-top-right-radius: 7px;
+  border-top-right-radius: 7px;
 }
 .tablet_wrap .tab_wrap .tab_head > li.on:last-child > a{
-    border-top-left-radius: 7px;
+  border-top-left-radius: 7px;
 }
 .tablet_wrap .tab_wrap .tab_2depth{
-    width: auto;
-    margin-top: 30px;
+  width: auto;
+  margin-top: 30px;
 }
 .tablet_wrap .tab_wrap .tab_2depth .t_head li{
-    display: inline-block;    
-    margin-left: 43px;
-    font-size: 19px;
-    font-weight: bold;
+  display: inline-block;    
+  margin-left: 43px;
+  font-size: 19px;
+  font-weight: bold;
 }
 .tablet_wrap .tab_wrap .tab_2depth .t_head li:first-child{
-    margin-left: 0;
+  margin-left: 0;
 }
 .tablet_wrap .tab_wrap .tab_2depth .t_head li > a{
-    padding: 5px 7px;
-    color: #6c6c6c;
-    background-color: transparent;
+  padding: 5px 7px;
+  color: #6c6c6c;
+  background-color: transparent;
 }
 .tablet_wrap .tab_wrap .tab_2depth .t_head li.on > a{
-    color: #fff;
-    background-color: #ba8e0f;
-    border-radius: 5px;
+  color: #fff;
+  background-color: #ba8e0f;
+  border-radius: 5px;
 }
 .tablet_wrap .tab_wrap .tab_content{
-    width: 100%;    
+  width: 100%;    
 }
 .tablet_wrap .tab_wrap .tab_content .tab_cont,
 .tablet_wrap .tab_wrap .tab_content .tab_cont .t_content .t_cont{
-    display: none;
-    width: 100%;
+  display: none;
+  width: 100%;
 }
 .tablet_wrap .tab_wrap .tab_content .tab_cont.on,
 .tablet_wrap .tab_wrap .tab_content .tab_cont .t_content .t_cont.on{
-    display: block;
+  display: block;
 }
 .tablet_wrap .goods_list li{
-    display: table;
-    width: 100%;
-    height: 165px;
-    margin-bottom: 18px;
-    background: url('../images/bg_goods_sulwhasoo.png') 0 0 repeat-x;
-    background-size: 100% 165px;
+  display: table;
+  width: 100%;
+  height: 165px;
+  padding: 0 50px;
+  margin-bottom: 18px;
+  background: url('../images/bg_goods_sulwhasoo.png') 0 0 repeat-x;
+  background-size: 100% 165px;
 }
 .tablet_wrap .goods_list li:first-child{
-    margin-top: 30px;
+  margin-top: 30px;
 }
 .tablet_wrap .goods_list li::after{
-    content: '';
-    display: block;
-    clear: both;
+  content: '';
+  display: block;
+  clear: both;
 }
 .tablet_wrap .goods_list li > div{
-    display: table-cell;
-    vertical-align: middle;
+  display: table-cell;
+  vertical-align: middle;
 }
 .tablet_wrap .goods_list li .txt_box{
-    width: 77%;
-    padding: 0 7%;
-    box-sizing: border-box;
+  width: 77%;
+  box-sizing: border-box;
 }
 .tablet_wrap .goods_list li .txt_box strong{
-    display: block;
-    font-size: 25px;
-    font-weight: bold;
-    color: #464646;
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
+  color: #464646;
 }
 .tablet_wrap .goods_list li .txt_box button{
-    width: 150px;
-    height: 33px;
-    margin-top: 15px;
-    text-align: center;
-    font-size: 20px;
-    line-height: 1.2;
-    color: #eee;
-    background-color: #868686;
-    border-radius: 25px;
+  width: 150px;
+  height: 33px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #eee;
+  background-color: #868686;
+  border-radius: 25px;
 }
 .tablet_wrap .goods_list li .img_box{
-    width: 23%;
-    height: 132px;
-    padding-left: 2%;
-    box-sizing: border-box;
+  width: 23%;
+  height: 135px;
+  box-sizing: border-box;
 }
 .tablet_wrap .goods_list li .img_box img{
-    height: 100%;
+  height: 100%;
 }
 
 /* layerpopup */
 .tablet_layer_wrap{
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 100;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
 }
 .tablet_layer_wrap.on{
-    display: block;
+  display: block;
 }
 .tablet_layer_wrap .dim_close{
-    position: absolute;
-    top: 27px;
-    right: 27px;
-    width: 22px;
-    height: 22px;
-    background: url('../images/btn_close.png') 0 0 no-repeat;
-    background-size: 22px;
+  position: absolute;
+  top: 27px;
+  right: 27px;
+  width: 22px;
+  height: 22px;
+  background: url('../images/btn_close.png') 0 0 no-repeat;
+  background-size: 22px;
 }
 .tablet_layer_wrap .tablet_layer_pop{
-    height: 100%;
-    text-align: center;
+  height: 100%;
+  text-align: center;
 }
 .tablet_layer_wrap .tablet_layer_pop::after{
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
 }
 .tablet_layer_wrap .tablet_layer_pop .layer_inner{
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    width: 475px;
-    max-height: 865px;
-    text-align: left;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 475px;
+  max-height: 865px;
+  text-align: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 .tablet_layer_wrap .pop_cont{
-    padding: 47px 34px;
-    word-spacing: -3px;
-    background-color: #fff;
-    border-radius: 6px;
+  padding: 47px 34px;
+  word-spacing: -3px;
+  background-color: #fff;
+  border-radius: 6px;
 }
 .tablet_layer_wrap .pop_cont .tit{
-    display: block;
-    font-size: 27px;
-    font-weight: bold;
-    color: #6e93f7;
+  display: block;
+  font-size: 27px;
+  font-weight: bold;
+  color: #6e93f7;
 }
 .tablet_layer_wrap .pop_cont .txt{
-    margin-top: 15px;
-    font-size: 27px;
-    font-weight: bold;
-    color: #4b4b4b;
-    word-break: break-all;
-    word-wrap: break-word;
+  margin-top: 15px;
+  font-size: 27px;
+  font-weight: bold;
+  color: #4b4b4b;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 .tablet_layer_wrap .pop_cont .tit + .txt,
 .tablet_layer_wrap .pop_cont .txt + .tit{
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 /* nodata */
 .tablet_wrap .no_data_wrap{
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 .tablet_wrap .no_data_wrap p::before{
-    content: '';
-    display: block;
-    width: 55px;
-    height: 53px;
-    margin: 0 auto 20px;
-    background: url('../images/ico/ico_nosample.png') 0 0 no-repeat;
-    background-size: 55px 53px;
+  content: '';
+  display: block;
+  width: 55px;
+  height: 53px;
+  margin: 0 auto 20px;
+  background: url('../images/ico/ico_nosample.png') 0 0 no-repeat;
+  background-size: 55px 53px;
 }
 .tablet_wrap .no_data_wrap p{
-    padding: 200px 0;
-    font-size: 24px;
-    font-weight: bold;
-    color: #9c7f2b;
-    word-break: break-all;
-    word-wrap: break-word;
+  padding: 200px 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #9c7f2b;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 /* 사은품샵 */
 .tablet_wrap.gift .info_box{
-    background-color: #c4c7ef;
+  background-color: #c4c7ef;
 }
 .tablet_wrap.gift .info_box strong{
-    color: #35528f;
+  color: #35528f;
 }
 .tablet_wrap.gift .gift_info_box{}
 .tablet_wrap.gift .gift_info_box > p{
-    position: relative;
-    padding-bottom: 15px;
-    font-size: 36px;
+  position: relative;
+  padding-bottom: 15px;
+  font-size: 36px;
 }
 .tablet_wrap.gift .gift_info_box > p::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 7px;
-    background: #dcddf5;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 7px;
+  background: #dcddf5;
 }
 .tablet_wrap.gift .gift_info_box > p > strong{
-    display: block;
-    font-size: 40px;
-    font-weight: bold;
-    color: #35528f;
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  color: #35528f;
 }
 .tablet_wrap.gift .slide_box{}
 .tablet_wrap.gift .slide_box .gift_slide{
-    width: 366px;
-    height: 100%;
-    margin-right: 25px;
-    background-color: #dcddf5;
-    border-radius: 15px;
+  width: 366px;
+  height: 100%;
+  margin-right: 25px;
+  background-color: #dcddf5;
+  border-radius: 15px;
 }
 
 /* 프리미엄관 */
 .tablet_wrap.premium .info_box{
-    background-color: #f3e1d2;
+  background-color: #f3e1d2;
 }
 .tablet_wrap.premium .info_box strong{
-    color: #7d6456;
+  color: #7d6456;
 }
 .tablet_wrap.premium .tab_wrap .tab_head{
-    background-color: #f3e1d2;
+  background-color: #f3e1d2;
 }
 .tablet_wrap.premium .service_list li{
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .tablet_wrap.premium .service_list .img_box img{
-    vertical-align: middle;
-    width: 100%;
+  vertical-align: middle;
+  width: 100%;
 }
 .tablet_wrap.premium .service_list .txt_box{
-    padding: 27px 27px 32px;
-    border: 1px solid #d7d7d7;
-    box-sizing: border-box;
+  padding: 27px 27px 32px;
+  border: 1px solid #d7d7d7;
+  box-sizing: border-box;
 }
 .tablet_wrap.premium .service_list .txt_box strong{
-    font-size: 28px;
+  font-size: 28px;
 }
 .tablet_wrap.premium .service_list .txt_box p{
-    font-size: 20px;
-    word-break: keep-all;
-    word-wrap: break-word;
+  font-size: 20px;
+  word-break: keep-all;
+  word-wrap: break-word;
 }
 .tablet_wrap.premium .service_list .txt_box strong + p{
-    margin-top: 17px;
+  margin-top: 17px;
 }
 
-/* 상품상세 */
-.tablet_wrap .btn_back:before{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    width: 15px;
-    height: 15px;
-    margin-top: -7px;
-    border-top: 2px solid #000;
-    border-left: 2px solid #000;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+/* 상품상세 - 기프트샵 */
+.tablet_wrap .tablet_header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 112px;
+  z-index: 100;
 }
-/* //200128 Tablet 기프트샵 - 이소연 */
+.tablet_wrap .tablet_header .sub_tit{
+  display: flex;
+  align-items: center;
+  padding: 0 26px;
+  width: 100%;
+  height: 112px;
+}
+.tablet_wrap .tablet_header .sub_tit .btn_back:before{
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #000;
+  border-left: 2px solid #000;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.tablet_wrap .goods_wrap{
+  padding-top: 112px;
+}
+.tablet_wrap .goods_slide_wrap .swiper-slide{
+  height: 344px;
+}
+.tablet_wrap .goods_slide_wrap .pagination{
+  bottom: 32px;
+}
+.tablet_wrap .goods_slide_wrap .pagination .bul{
+  width: 11px;
+  height: 11px;
+}
+.tablet_wrap .goods_slide_wrap .pagination .bul + .bul{
+  margin-left: 12px;
+}
+.tablet_wrap .goods_info{
+  padding: 43px 37px;
+  border-top: 2px solid #eee;
+  font-size: 24px;
+}
+.tablet_wrap .goods_wrap .g_satisfy{
+  margin-top: 15px;
+  font-size: 16px;
+  color: #5d8bd7;
+}
+.tablet_wrap .goods_wrap .g_satisfy::before{
+  content: '';
+  display: inline-block;
+  vertical-align: -1px;
+  width: 17px;
+  height: 17px;
+  margin-right: 5px;
+  background: url('../images/ico/ico_satisfy.png')0 0 no-repeat;
+  background-size: 17px;
+}
+.tablet_wrap .goods_cont{
+  padding-bottom: 76px;
+}
+.tablet_wrap .goods_cont .goods_tab{
+  border-top: 2px solid #eee;
+}
+.tablet_wrap .goods_cont .goods_tab li a{
+  padding: 9px 0;
+  font-size: 21px;
+  border-bottom: 2px solid #eee;
+}
+.tablet_wrap .goods_cont .goods_tab li.on a{
+  border-bottom: 2px solid #35528f;
+}
+.tablet_wrap .goods_cont .hot_goods_wrap{
+  padding: 30px 40px 0;
+}
+.tablet_wrap .hot_goods_wrap strong{
+  font-size: 27px;
+}
+.tablet_wrap .hot_goods_wrap .hot_goods{
+  margin-top: 15px;
+}
+.tablet_wrap .hot_goods_wrap .hot_goods li{
+  min-height: 320px;
+  margin: 0 0 20px 3px;
+}
+.tablet_wrap .hot_goods_wrap .hot_goods li:nth-child(odd){
+  margin-left: 0;
+}
+.tablet_wrap .hot_goods_wrap .hot_goods .hot_goods_img{
+  max-height: 195px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.tablet_wrap .hot_goods_wrap .hot_goods .hot_goods_cont{
+  height: 125px;
+  padding: 20px 25px;
+  font-size: 23px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.tablet_wrap .goods_wrap .btn_wrap::before{
+  width: 2px;
+}
+.tablet_wrap .goods_wrap .btn_wrap .btn{
+  font-size: 25px;
+}
+/* 상품상세 - 프리미엄관 */
+.tablet_wrap .goods_wrap.premium .goods_cont .goods_tab li.on a{
+  border-bottom: 2px solid #8a7264;
+}
+/* 제품평 */
+
+/* //200128 Tablet 기프트샵 - 이소연 */ 
