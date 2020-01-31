@@ -2,7 +2,7 @@
 
 /* 200128 Tablet 기프트샵 - 이소연 */
 body{
-    max-width: 1668px;
+    max-width: 1024px;
     font-family: 'DroidSans','DroidSansFallback','Helvetica',sans-serif;
     color: #000;
     background-color: #fff;
@@ -12,16 +12,15 @@ body{
 /* 샵 선택 */
 .tablet_wrap .product_select{
     min-width: 768px;
-    max-width: 1367px;
-    margin: 80px auto 0;
+    margin: 40px auto 0;
     text-align: center;
 }
 .tablet_wrap .product_select li{
     position: relative;
     display: inline-block;
-    padding-top: 100px;
-    margin: 0 50px;
-    font-size: 41px;
+    padding-top: 50px;
+    margin: 0 25px;
+    font-size: 20px;
 }
 .tablet_wrap .product_select li.on{
     font-weight: bold;
@@ -31,10 +30,11 @@ body{
     position: absolute;
     top: 0;
     width: 100%;
-    height: 72px;
+    height: 36px;
     background-image: url('../images/ico/ico_shop_tab01.png');
     background-position: center 0;
     background-repeat: no-repeat;
+    background-size: 36px;
 }
 .tablet_wrap .product_select li:nth-child(2) a::before{
     background-image: url('../images/ico/ico_shop_tab02.png');
@@ -53,28 +53,27 @@ body{
 }
 .tablet_wrap .info_box{
     width: 100%;
-    padding: 30px 85px;
-    margin-top: 60px;
-    font-size: 56px;
+    padding: 15px 42px;
+    margin-top: 30px;
+    font-size: 28px;
     background-color: #e7dfc8;
 }
 .tablet_wrap .info_box strong{
-    margin-right: 10px;
+    margin-right: 5px;
     font-weight: bold;
     color: #6f5406;
 }
 .tablet_wrap .info_box .ico_info{
     display: inline-block;
-    width: 45px;
-    height: 45px;
+    width: 22px;
+    height: 22px;
     background: url('../images/ico/ico_info.png') 0 0 no-repeat;
 }
 
 /* 브랜드 선택 */
 .tablet_wrap .brand_select{
     min-width: 768px;
-    max-width: 1367px;
-    margin: 100px auto 0;
+    margin: 50px auto 0;
 }
 .tablet_wrap .brand_select li{
     display: inline-block;
@@ -84,10 +83,11 @@ body{
 .tablet_wrap .brand_select li a{
     display: inline-block;
     width: 100%;
-    height: 207px;
+    height: 103px;
     background-image: url('../images/ico/ico_menu01.png');
     background-position: center 0;
     background-repeat: no-repeat;
+    background-size: 103px;
 }
 .tablet_wrap .brand_select li:nth-child(2) a{
     background-image: url('../images/ico/ico_menu02.png');
@@ -112,9 +112,8 @@ body{
 }
 .tablet_wrap .tab_wrap{
     min-width: 768px;
-    max-width: 1367px;
-    margin: 100px auto 0;
-    border-top: 7px solid #535353;
+    margin: 50px auto 0;
+    border-top: 3px solid #535353;
 }
 .tablet_wrap .tab_wrap .tab_head{
     background-color: #e7dfc8;
@@ -128,48 +127,48 @@ body{
     position: relative;
     float: left;
     width: 50%;
-    height: 100px;
+    height: 50px;
     font-weight: bold;
 }
 .tablet_wrap .tab_wrap .tab_head > li > a{
     display: block;
     width:100%;
-    height:100px;
+    height:50px;
     text-align: center;
-    font-size: 45px;
+    font-size: 22px;
     line-height: 2.3;
 }
 .tablet_wrap .tab_wrap .tab_head > li.on > a{
     background-color: #fff;
 }
 .tablet_wrap .tab_wrap .tab_head > li.on:first-child > a{
-    border-top-right-radius: 15px;
+    border-top-right-radius: 7px;
 }
 .tablet_wrap .tab_wrap .tab_head > li.on:last-child > a{
-    border-top-left-radius: 15px;
+    border-top-left-radius: 7px;
 }
 .tablet_wrap .tab_wrap .tab_2depth{
     width: auto;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 .tablet_wrap .tab_wrap .tab_2depth .t_head li{
     display: inline-block;    
-    margin-left: 86px;
-    font-size: 39px;
+    margin-left: 43px;
+    font-size: 19px;
     font-weight: bold;
 }
 .tablet_wrap .tab_wrap .tab_2depth .t_head li:first-child{
     margin-left: 0;
 }
 .tablet_wrap .tab_wrap .tab_2depth .t_head li > a{
-    padding: 10px 15px;
+    padding: 5px 7px;
     color: #6c6c6c;
     background-color: transparent;
 }
 .tablet_wrap .tab_wrap .tab_2depth .t_head li.on > a{
     color: #fff;
     background-color: #ba8e0f;
-    border-radius: 11px;
+    border-radius: 5px;
 }
 .tablet_wrap .tab_wrap .tab_content{
     width: 100%;    
@@ -186,12 +185,13 @@ body{
 .tablet_wrap .goods_list li{
     display: table;
     width: 100%;
-    height: 330px;
-    margin-bottom: 36px;
+    height: 165px;
+    margin-bottom: 18px;
     background: url('../images/bg_goods_sulwhasoo.png') 0 0 repeat-x;
+    background-size: auto 165px;
 }
 .tablet_wrap .goods_list li:first-child{
-    margin-top: 60px;
+    margin-top: 30px;
 }
 .tablet_wrap .goods_list li::after{
     content: '';
@@ -209,20 +209,20 @@ body{
 }
 .tablet_wrap .goods_list li .txt_box strong{
     display: block;
-    font-size: 50px;
+    font-size: 25px;
     font-weight: bold;
     color: #464646;
 }
 .tablet_wrap .goods_list li .txt_box button{
-    width: 300px;
-    height: 66px;
-    margin-top: 30px;
+    width: 150px;
+    height: 33px;
+    margin-top: 15px;
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     line-height: 1.2;
     color: #eee;
     background-color: #868686;
-    border-radius: 50px;
+    border-radius: 25px;
 }
 .tablet_wrap .goods_list li .img_box{
     width: 20%;
@@ -247,10 +247,10 @@ body{
 }
 .tablet_layer_wrap .dim_close{
     position: absolute;
-    top: 53px;
-    right: 54px;
-    width: 44px;
-    height: 44px;
+    top: 27px;
+    right: 27px;
+    width: 22px;
+    height: 22px;
     background: url('../images/btn_close.png') 0 0 no-repeat;
 }
 .tablet_layer_wrap .tablet_layer_pop{
@@ -267,17 +267,17 @@ body{
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    width: 947px;
-    max-height: 1730px;
+    width: 473px;
+    max-height: 865px;
     text-align: left;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
 }
 .tablet_layer_wrap .pop_cont{
-    padding: 95px 68px;
-    word-spacing: -7px;
+    padding: 47px 34px;
+    word-spacing: -3px;
     background-color: #fff;
-    border-radius: 12px;
+    border-radius: 6px;
 }
 .tablet_layer_wrap .pop_cont .tit{
     font-size: 55px;
@@ -285,15 +285,15 @@ body{
     color: #6e93f7;
 }
 .tablet_layer_wrap .pop_cont .txt{
-    margin-top: 25px;
-    font-size: 55px;
+    margin-top: 12px;
+    font-size: 27px;
     font-weight: bold;
     color: #4b4b4b;
     word-break: break-all;
     word-wrap: break-word;
 }
 .tablet_layer_wrap .pop_cont .tit + .txt{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 /* nodata */
@@ -304,10 +304,11 @@ body{
 .tablet_wrap .no_data_wrap p::before{
     content: '';
     display: block;
-    width: 110px;
-    height: 106px;
-    margin: 0 auto 40px;
+    width: 55px;
+    height: 53px;
+    margin: 0 auto 20px;
     background: url('../images/ico/ico_nosample.png') 0 0 no-repeat;
+    background-size: 55px 53px;
 }
 .tablet_wrap .no_data_wrap p{
     padding: 200px;
@@ -328,8 +329,8 @@ body{
 .tablet_wrap.gift .gift_info_box{}
 .tablet_wrap.gift .gift_info_box > p{
     position: relative;
-    padding-bottom: 30px;
-    font-size: 72px;
+    padding-bottom: 15px;
+    font-size: 36px;
 }
 .tablet_wrap.gift .gift_info_box > p::after{
     content: '';
@@ -337,22 +338,22 @@ body{
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 15px;
+    height: 7px;
     background: #dcddf5;
 }
 .tablet_wrap.gift .gift_info_box > p > strong{
     display: block;
-    font-size: 80px;
+    font-size: 40px;
     font-weight: bold;
     color: #35528f;
 }
 .tablet_wrap.gift .slide_box{}
 .tablet_wrap.gift .slide_box .gift_slide{
-    width: 732px;
+    width: 366px;
     height: 100%;
-    margin-right: 50px;
+    margin-right: 25px;
     background-color: #dcddf5;
-    border-radius: 30px;
+    border-radius: 15px;
 }
 
 /* 프리미엄관 */
@@ -366,14 +367,14 @@ body{
     background-color: #f3e1d2;
 }
 .tablet_wrap.premium .service_list li{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .tablet_wrap.premium .service_list .img_box img{
     vertical-align: middle;
     width: 100%;
 }
 .tablet_wrap.premium .service_list .txt_box{
-    padding: 55px 55px 65px;
+    padding: 27px 27px 32px;
     border: 1px solid #d7d7d7;
     box-sizing: border-box;
 }
@@ -381,11 +382,11 @@ body{
     font-size: 57px;
 }
 .tablet_wrap.premium .service_list .txt_box p{
-    font-size: 40px;
+    font-size: 20px;
     word-break: keep-all;
     word-wrap: break-word;
 }
 .tablet_wrap.premium .service_list .txt_box strong + p{
-    margin-top: 35px;
+    margin-top: 17px;
 }
 /* //200128 Tablet 기프트샵 - 이소연 */
