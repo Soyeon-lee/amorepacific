@@ -41,19 +41,71 @@
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="gift_slide">
-                                <a href="javascript:void(0);">
-                                    <strong class="gift_tit">[보아르] 모아 미니 제습기 1000</strong>
-                                    <div class="img">
-                                        <img src="../../images/img_slide.jpg" alt="">
-                                    </div>
-                                    <div class="comment_info">
-                                        <span class="g_satisfy">4.0</span>
-                                        <span class="g_comment">263</span>
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="javascript:void(0);" class="gift_slide">
+                                <strong class="gift_tit">[보아르] 모아 미니 제습기 1000</strong>
+                                <div class="thumb">
+                                    <img src="../../images/img_slide.jpg" alt="">
+                                </div>
+                                <div class="thumb_info">
+                                    <span class="g_satisfy">4.0</span>
+                                    <span class="g_comment">263</span>
+                                </div>
+                            </a>
                         </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);" class="gift_slide">
+                                <strong class="gift_tit">[보아르] 모아 미니 제습기 1000</strong>
+                                <div class="thumb">
+                                    <img src="../../images/img_slide.jpg" alt="">
+                                </div>
+                                <div class="thumb_info">
+                                    <span class="g_satisfy">4.0</span>
+                                    <span class="g_comment">263</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);" class="gift_slide">
+                                <strong class="gift_tit">[보아르] 모아 미니 제습기 1000</strong>
+                                <div class="thumb">
+                                    <img src="../../images/img_slide.jpg" alt="">
+                                </div>
+                                <div class="thumb_info">
+                                    <span class="g_satisfy">4.0</span>
+                                    <span class="g_comment">263</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);" class="gift_slide">
+                                <strong class="gift_tit">[보아르] 모아 미니 제습기 1000</strong>
+                                <div class="thumb">
+                                    <img src="../../images/img_slide.jpg" alt="">
+                                </div>
+                                <div class="thumb_info">
+                                    <span class="g_satisfy">4.0</span>
+                                    <span class="g_comment">263</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="javascript:void(0);" class="gift_slide">
+                                <strong class="gift_tit">[보아르] 모아 미니 제습기 1000</strong>
+                                <div class="thumb">
+                                    <img src="../../images/img_slide.jpg" alt="">
+                                </div>
+                                <div class="thumb_info">
+                                    <span class="g_satisfy">4.0</span>
+                                    <span class="g_comment">263</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination_wrap">
+                    <div class="pagination">
+                        <!-- Swiper pagination 슬라이드 수에 맞게 자동 추가됨 -->
+                        <span class="bul bul_active"></span>
                     </div>
                 </div>
             </div>
@@ -62,7 +114,13 @@
         <!-- 사은품 모두보기 -->
         <div class="view_wrap">
             <div class="view_top">
-                <strong class="tit">11월 의 사은품 모두보기 (28개)</strong>
+                <strong class="tit"><strong>11월</strong>의 사은품 모두보기 <span>(28개)</span></strong>
+                <div class="select_box">
+                    <select class="" title="선택">
+                        <option>조회순</option>
+                        <option>평점순</option>
+                    </select>
+                </div>
             </div>
             <div class="view_cont">
 
@@ -93,6 +151,15 @@
 <!--// layerpopup -->
 
 <script>
+    // swiper
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 24,
+        pagination: ('.pagination'),
+        bulletClass: 'bul',
+        bulletActiveClass: 'bul_active',
+    });
+
     // layer popup
     $('.btn_pop').click(function () {
         var openLayerId = $(this).attr('href') ? $(this).attr('href') : $(this).data('pop');
