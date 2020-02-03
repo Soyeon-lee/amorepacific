@@ -199,6 +199,18 @@ body{
   background: url('../images/bg_goods_sulwhasoo.png') 0 0 repeat-x;
   background-size: 100% 165px;
 }
+.tablet_wrap .goods_list.hera li{
+  background: url('../images/bg_goods_hera.png') 0 0 repeat-x;
+  background-size: 100% 165px;
+}
+.tablet_wrap .goods_list.amorepacific li{
+  background: url('../images/bg_goods_ap.png') 0 0 repeat-x;
+  background-size: 100% 165px;
+}
+.tablet_wrap .goods_list.primera li{
+  background: url('../images/bg_goods_primera.png') 0 0 repeat-x;
+  background-size: 100% 165px;
+}
 .tablet_wrap .goods_list li:first-child{
   margin-top: 30px;
 }
@@ -340,17 +352,20 @@ body{
 .tablet_wrap.gift .info_box strong{
   color: #35528f;
 }
-.tablet_wrap.gift .gift_info_box{}
+.tablet_wrap.gift .gift_info_box{
+
+}
 .tablet_wrap.gift .gift_info_box > p{
   position: relative;
-  padding-bottom: 15px;
+  padding: 50px 42px 15px;
   font-size: 36px;
+  font-weight: bold;
 }
 .tablet_wrap.gift .gift_info_box > p::after{
   content: '';
   position: absolute;
-  bottom: 0;
-  left: 0;
+  bottom: -7px;
+  left: 42px;
   width: 100%;
   height: 7px;
   background: #dcddf5;
@@ -361,7 +376,9 @@ body{
   font-weight: bold;
   color: #35528f;
 }
-.tablet_wrap.gift .slide_box{}
+.tablet_wrap.gift .slide_box{
+  margin: 31px 0 0 42px;
+}
 .tablet_wrap.gift .slide_box .gift_slide{
   width: 366px;
   height: 100%;
@@ -424,12 +441,17 @@ body{
 .tablet_wrap .tablet_header .sub_tit .btn_back:before{
   content: '';
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  vertical-align: top;
+  width: 18px;
+  height: 18px;
   border-top: 2px solid #000;
   border-left: 2px solid #000;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+.tablet_wrap .tablet_header .sub_tit .tit{
+  margin-left: 10px;
+  font-size: 33px;
 }
 .tablet_wrap .goods_wrap{
   padding-top: 112px;
@@ -464,11 +486,11 @@ body{
   width: 17px;
   height: 17px;
   margin-right: 5px;
-  background: url('../images/ico/ico_satisfy.png')0 0 no-repeat;
+  background: url('../images/ico/ico_satisfy.png') 0 0 no-repeat;
   background-size: 17px;
 }
 .tablet_wrap .goods_cont{
-  padding-bottom: 76px;
+  padding-bottom: 75px;
 }
 .tablet_wrap .goods_cont .goods_tab{
   border-top: 2px solid #eee;
@@ -491,8 +513,9 @@ body{
   margin-top: 15px;
 }
 .tablet_wrap .hot_goods_wrap .hot_goods li{
+  width: calc(50% - 8px);
   min-height: 320px;
-  margin: 0 0 20px 3px;
+  margin: 0 0 20px 10px;
 }
 .tablet_wrap .hot_goods_wrap .hot_goods li:nth-child(odd){
   margin-left: 0;
@@ -519,13 +542,32 @@ body{
 .tablet_wrap .goods_wrap.premium .goods_cont .goods_tab li.on a{
   border-bottom: 2px solid #8a7264;
 }
+.tablet_wrap .goods_wrap.premium .g_satisfy{
+  color: #8a7264;
+}
+.tablet_wrap .goods_wrap.premium .g_satisfy::before{
+  background: url('../images/ico/ico_satisfy02.png') 0 0 no-repeat;
+  background-size: 17px;
+}
 /* 제품평 */
 .tablet_wrap .goods_cont .comment_wrap{
-  padding: 0 20px ;
+  padding: 0 20px;
 }
-.tablet_wrap
-.tablet_wrap
-.tablet_wrap
+.tablet_wrap .comment_wrap .comment{
+  min-height: 124px;
+  padding: 29px 0 29px 15px;
+  font-size: 16px;
+}
+.tablet_wrap .comment_wrap .comment .comment_img{
+  width: 65px;
+  height: 65px;
+  border: 1px solid #dfdfdf;
+  border-radius: 12px;
+}
+.tablet_wrap .comment_wrap .comment .comment_txt{
+  width: calc(100% - 205px);
+  margin-left: 23px;
+}
 .tablet_wrap
 
 /* 제품평이 없는 경우 */
@@ -536,6 +578,9 @@ body{
   margin-top: 0;
   font-size: 25px;
   color: #4a5195;
+}
+.tablet_wrap .goods_wrap.premium.nodata .no_comment_wrap p{
+  color: #8a7264;
 }
 
 /* //200128 Tablet 기프트샵 - 이소연 */ 

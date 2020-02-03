@@ -4572,8 +4572,8 @@ button.swiper-pagination-bullet {
 }
 .myrct_tab_cont .recent_wrap .recent .txt_box{
   position: relative;
-  width: calc(100% - 160px);
-  margin: -18px 25px 0 10px;
+  width: calc(100% - 145px);
+  margin: -18px 9px 0 10px;
 }
 .myrct_tab_cont .recent_wrap .recent .txt_box strong{
   display: -webkit-box;
@@ -4599,9 +4599,6 @@ button.swiper-pagination-bullet {
   margin-left: 10px;
 }
 .myrct_tab_cont .recent_wrap .recent .txt_box .state{
-  position: absolute;
-  right: 0;
-  bottom: 0;
   font-size: 12px;
   font-weight: bold;
   color: #30549d;
@@ -4631,7 +4628,7 @@ button.swiper-pagination-bullet {
 /* 교환상품 정보 없는 경우 */
 .myrct_wrap .recent_wrap .no_recent_wrap{
   margin-top: 50%;
-} b
+}
 .myrct_wrap .recent_wrap .no_recent_wrap::before{
   content: '';
   display: block;
