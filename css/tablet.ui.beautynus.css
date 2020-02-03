@@ -379,12 +379,68 @@ body{
 .tablet_wrap.gift .slide_box{
   margin: 31px 0 0 42px;
 }
-.tablet_wrap.gift .slide_box .gift_slide{
-  width: 366px;
+.tablet_wrap.gift .slide_box a{
+  display: block;
+}
+.tablet_wrap.gift .gift_slide{
+  padding: 24px 0 20px;
+  margin-right: 24px;
+  width: 365px;
   height: 100%;
   margin-right: 25px;
   background-color: #dcddf5;
   border-radius: 15px;
+}
+.tablet_wrap.gift .gift_slide .gift_tit{
+  display: block;
+  padding: 0 27px;
+  font-size: 27px;
+  font-weight: bold;
+  color: #464646;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.tablet_wrap.gift .gift_slide .img{
+  margin-top: 20px;
+  width: 365px;
+}
+.tablet_wrap.gift .gift_slide .img img{
+  vertical-align: middle;
+  width: 100%;
+}
+.tablet_wrap.gift .gift_slide .comment_info{
+  margin-top: 15px;
+  padding-right: 27px;
+  text-align: right;
+}
+.tablet_wrap.gift .gift_slide .g_satisfy{
+  font-size: 20px;
+  color: #5d8bd7;
+}
+.tablet_wrap.gift .gift_slide .g_satisfy::before{
+  content: '';
+  display: inline-block;
+  vertical-align: -1px;
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  background: url('../images/ico/ico_satisfy03.png') 0 0 no-repeat;
+  background-size: 15px;
+}
+.tablet_wrap.gift .gift_slide .g_comment{
+  margin-left: 17px;
+  font-size: 20px;
+  color: #5d8bd7;
+}
+.tablet_wrap.gift .gift_slide .g_comment::before{
+  content: '';
+  display: inline-block;
+  vertical-align: -3px;
+  width: 27px;
+  height: 21px;
+  margin-right: 5px;
+  background: url('../images/ico/ico_comment.png') 0 0 no-repeat;
+  background-size: 27px 21px;
 }
 
 /* 프리미엄관 */
@@ -557,6 +613,7 @@ body{
   min-height: 124px;
   padding: 29px 0 29px 15px;
   font-size: 16px;
+  border-bottom: 1px solid #c9c9c9;
 }
 .tablet_wrap .comment_wrap .comment .comment_img{
   width: 65px;
@@ -578,6 +635,9 @@ body{
   margin-top: 0;
   font-size: 25px;
   color: #4a5195;
+}
+.tablet_wrap .goods_wrap.premium.nodata{
+  background-color: #ebe6e3;
 }
 .tablet_wrap .goods_wrap.premium.nodata .no_comment_wrap p{
   color: #8a7264;
