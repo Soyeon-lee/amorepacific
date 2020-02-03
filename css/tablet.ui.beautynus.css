@@ -568,7 +568,7 @@ body{
   width: calc(100% - 205px);
   margin-left: 23px;
 }
-.tablet_wrap
+.tablet_wrap{}
 
 /* 제품평이 없는 경우 */
 .tablet_wrap .goods_wrap.nodata{
