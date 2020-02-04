@@ -170,20 +170,24 @@
 <!--// layerpopup -->
 
 <script>
-    //Tab
-    var tabHead = $('.tab_head > li > a'); // 1depth head
-    var tabHead2 = $('.t_head > li > a'); // 2depth head
-    var tabCont = $('.tab_content > .tab_cont'); // 1depth cont
-    var tabCont2 = $('.t_content > .t_cont'); // 2depth cont
-
-    tabHead.click(function(){
-        if(tabHead.parent('li').hasClass('on')){
-            if($(this).find('.tab_2depth')){
-
-            }
-        }
-    })
-
+    // tab menu
+    $(".tab_head > li").click(function () {
+        var num = $(".tab_head > li").index(this);
+        $(".tab_content .tab_cont").removeClass('on');
+        $(".tab_content .tab_cont").eq(num).addClass('on');
+        $(".tab_head > li").removeClass('on');
+        $(this).addClass('on');
+    });
+    
+    // tab in tab
+    $(".tab_2depth > .t_head > li").click(function () {
+        var num2 = $(".t_head > li").index(this);
+        $(".t_content > .t_cont").removeClass('on');
+        $(".t_content > .t_cont").eq(num2).addClass('on');
+        $(".t_head li").removeClass('on');
+        $(this).addClass('on')
+    });
+    
     // layer popup
     $('.btn_pop').click(function () {
         var openLayerId = $(this).attr('href') ? $(this).attr('href') : $(this).data('pop');

@@ -110,6 +110,15 @@
 <!--// layerpopup -->
 
 <script>
+    // tab menu
+    $(".tab_head > li").click(function () {
+        var num = $(".tab_head > li").index(this);
+        $(".tab_content .tab_cont").removeClass('on');
+        $(".tab_content .tab_cont").eq(num).addClass('on');
+        $(".tab_head > li").removeClass('on');
+        $(this).addClass('on');
+    });
+    
     // layer popup
     $('.btn_pop').click(function () {
         var openLayerId = $(this).attr('href') ? $(this).attr('href') : $(this).data('pop');

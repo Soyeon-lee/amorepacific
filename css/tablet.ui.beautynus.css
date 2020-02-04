@@ -484,7 +484,7 @@ body{
 .tablet_wrap.gift .slide_box .pagination_wrap{
   position: relative;
   left: 42px;
-  width: calc(100% + 42px);
+  width: calc(100% - 42px);
   height: 7px;
 }
 .tablet_wrap.gift .slide_box .pagination{

@@ -70,7 +70,7 @@
                     <h4 class="blind">스킨케어</h4>
                     <!-- tab_2depth 내용 추가 -->
                     <div class="t_content">
-                        <div class="t_cont">
+                        <div class="t_cont on">
                             <h5 class="blind">스킨/로션</h5>
                             <!-- [D] 브랜드별 tab click 시 class add
                                 HERA : hera
@@ -160,40 +160,23 @@
 <!--// layerpopup -->
 
 <script>
-    var tabletUI = {
-        init : function(){
-            if($('.tab_wrap').length){this.tabMenu.init();} //Tab
-            if($('.tablet_layer_wrap').length){this.layerPop.init();} //Layer popup
-        },
-        tabMenu : {
-            tabHead : '.tab_head > li',
-            tabHead2 : '.t_head > li',
-            tabCont : '.tab_content > .tab_cont',
-            tabCont2 : '.t_content > .t_cont',
-            init : function(){
-                var _this = this;
-                var $idx = 0; 
-                _this.event();
-            },
-            event : function(){
-                var _this = this;
-
-                $(_this.tabHead).on('click', function(){
-                    var $index = $(this).index(); // tabhead index
-                });
-            }
-        }
-    }
-
-    var tabHead = $('.tab_head > li > a'); // 1depth head
-    var tabHead2 = $('.t_head > li > a'); // 2depth head
-    var tabCont = $('.tab_content > .tab_cont'); // 1depth cont
-    var tabCont2 = $('.t_content > .t_cont'); // 2depth cont
-
-    tabHead.click(function(){
-        $(this).parent('li').addClass('on').siblings('li').removeClass('on');
-
-    })
+    // tab menu
+    $(".tab_head > li").click(function () {
+        var num = $(".tab_head > li").index(this);
+        $(".tab_content .tab_cont").removeClass('on');
+        $(".tab_content .tab_cont").eq(num).addClass('on');
+        $(".tab_head > li").removeClass('on');
+        $(this).addClass('on');
+    });
+    
+    // tab in tab
+    $(".tab_2depth > .t_head > li").click(function () {
+        var num2 = $(".t_head > li").index(this);
+        $(".t_content > .t_cont").removeClass('on');
+        $(".t_content > .t_cont").eq(num2).addClass('on');
+        $(".t_head li").removeClass('on');
+        $(this).addClass('on')
+    });
 
     // layer popup
     $('.btn_pop').click(function () {
