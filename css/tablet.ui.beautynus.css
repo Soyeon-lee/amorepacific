@@ -380,7 +380,7 @@ body{
   overflow: hidden;
   position: relative;
   right: 42px;
-  width: calc(100% + 84px);
+  width: calc(100% + 42px);
   margin-top: 37px;
 }
 .tablet_wrap.gift .slide_box .swiper-container{
@@ -421,10 +421,19 @@ body{
 }
 .tablet_wrap.gift .gift_slide .gift_tit{
   display: block;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  justify-content: center;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   padding: 0 27px;
   font-size: 27px;
   font-weight: bold;
   color: #464646;
+  text-align: left;
   word-break: break-all;
   word-wrap: break-word;
 }
@@ -434,20 +443,20 @@ body{
   height: 219px;
   margin-top: 20px;
 }
-.tablet_wrap.gift .gift_slide .thumb img{
+.tablet_wrap.gift .thumb img{
   vertical-align: middle;
   width: 100%;
 }
-.tablet_wrap.gift .gift_slide .thumb_info{
+.tablet_wrap.gift .thumb_info{
   margin-top: 15px;
   padding-right: 27px;
   text-align: right;
 }
-.tablet_wrap.gift .gift_slide .g_satisfy{
+.tablet_wrap.gift .g_satisfy{
   font-size: 20px;
   color: #5d8bd7;
 }
-.tablet_wrap.gift .gift_slide .g_satisfy::before{
+.tablet_wrap.gift .g_satisfy::before{
   content: '';
   display: inline-block;
   vertical-align: -1px;
@@ -457,12 +466,12 @@ body{
   background: url('../images/ico/ico_satisfy03.png') 0 0 no-repeat;
   background-size: 15px;
 }
-.tablet_wrap.gift .gift_slide .g_comment{
+.tablet_wrap.gift .g_comment{
   margin-left: 17px;
   font-size: 20px;
   color: #5d8bd7;
 }
-.tablet_wrap.gift .gift_slide .g_comment::before{
+.tablet_wrap.gift .g_comment::before{
   content: '';
   display: inline-block;
   vertical-align: -3px;
@@ -517,8 +526,118 @@ body{
   font-weight: bold;
   color: #2c0281;
 }
-.tablet_wrap.gift .view_wrap .view_top .select_box{
+.tablet_wrap.gift .view_wrap .view_top .sort_box{
+  margin-top: 7px;
+  padding: 0 42px;
   text-align: right;
+}
+.tablet_wrap.gift .view_wrap .view_top .sort_box .select_box{
+  min-width: 94px;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+.tablet_wrap.gift .view_wrap .view_top .select_box select{
+  height: 25px;
+  padding: 0 24px;
+  font-size: 18px;
+  color: #14044b;
+  background-image: url('../images/btn_select02.png');
+  background-position: 82px 10px;
+  background-repeat: no-repeat;
+  background-size: 15px 9px;
+}
+.tablet_wrap.gift .price_tab{
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+  border-bottom: 2px solid #eee;
+}
+.tablet_wrap.gift .price_tab ul::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.tablet_wrap.gift .price_tab li{
+  float: left;
+  width: 25%;
+  padding: 0 42px 7px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #37237a;
+}
+.tablet_wrap.gift .price_tab li.on a{
+  position: relative;
+  font-size: 20px;
+  color: #fff;
+}
+.tablet_wrap.gift .price_tab li.on a::after{
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #37237a;
+}
+.tablet_wrap.gift .view_cont{
+  margin-top: 18px;
+}
+.tablet_wrap.gift .price_cont{
+  margin-top: -18px;
+  padding: 32px 42px;
+  background-color : #e3e7f8;
+}
+.tablet_wrap.gift .price_cont ul::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.tablet_wrap.gift .price_cont li{
+  position: relative;
+  float: left;
+  width: calc(50% - 10px);
+  margin: 18px 0 0 20px;
+}
+.tablet_wrap.gift .price_cont li:nth-child(odd){
+  margin-left: 0;
+}
+.tablet_wrap.gift .price_cont li .sold_out{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(27, 27, 27, 0.5);
+}
+.tablet_wrap.gift .price_cont li .sold_out::after{
+  content: '';
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 72px;
+  height: 72px;
+  background: url('../images/ico/ico_soldout.png') 0 0 no-repeat;
+  background-size: 72px auto;
+}
+.tablet_wrap.gift .price_cont .thumb_info{
+  display: block;
+  width: 100%;
+  margin-top: 0;
+  padding: 24px 22px;
+  background-color: #fff;
+  text-align: left;
+}
+.tablet_wrap.gift .thumb_info .txt{
+  display: block;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  justify-content: center;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-top: 15px;
+  font-size: 24px;
+  color: #464646;
 }
 
 /* 프리미엄관 */

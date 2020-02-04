@@ -3224,12 +3224,11 @@ ul.note li.item + li.item {
   background-size: cover; }
 .product-of-interest .product-list .item .info .name {
   display: block;
+  display: -webkit-box;
   margin: 0.188em 1em 0;
   text-align: center;
   word-break: keep-all;
-  display: block;
   font-size: 1.063em;
-  display: -webkit-box;
   -webkit-box-pack: center;
   justify-content: center;
   line-height: 1.35;

@@ -42,7 +42,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="javascript:void(0);" class="gift_slide">
-                                <strong class="gift_tit">[보아르] 모아 미니 제습기 1000</strong>
+                                <strong class="gift_tit">[보아르] 모아 미니 제습기 1000 [보아르] 모아 미니 제습기 1000 [보아르] 모아 미니 제습기 1000 [보아르] 모아 미니 제습기 1000</strong>
                                 <div class="thumb">
                                     <img src="../../images/img_slide.jpg" alt="">
                                 </div>
@@ -115,15 +115,90 @@
         <div class="view_wrap">
             <div class="view_top">
                 <strong class="tit"><strong>11월</strong>의 사은품 모두보기 <span>(28개)</span></strong>
-                <div class="select_box">
-                    <select class="" title="선택">
-                        <option>조회순</option>
-                        <option>평점순</option>
-                    </select>
+                <div class="sort_box">
+                    <div class="select_box">
+                        <select class="" title="선택">
+                            <option>조회순</option>
+                            <option>평점순</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="price_tab">
+                    <ul>
+                        <li class="on"><a href="javascript:void(0);"><span>20만원이상</span></a></li>
+                        <li><a href="javascript:void(0);"><span>40만원이상</span></a></li>
+                        <li><a href="javascript:void(0);"><span>60만원이상</span></a></li>
+                        <li><a href="javascript:void(0);"><span>100만원이상</span></a></li>
+                    </ul>
                 </div>
             </div>
             <div class="view_cont">
-
+                <div class="price_cont">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <!-- [D] sold out일 경우 추가 -->
+                                <span class="sold_out"></span>
+                                <span class="thumb">
+                                    <img src="../../images/img_price01.jpg" alt="">
+                                </span>
+                                <span class="thumb_info">
+                                    <span class="g_satisfy">4.0</span>
+                                    <span class="g_comment">263</span>
+                                    <p class="txt">[보아르] 모아 미니 제습기 1000 [보아르] 모아 미니 제습기 1000 [보아르] 모아 미니 제습기 1000</p>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <span class="thumb">
+                                    <img src="../../images/img_price01.jpg" alt="">
+                                </span>
+                                <span class="thumb_info">
+                                    <span class="g_satisfy">4.0</span>
+                                    <span class="g_comment">263</span>
+                                    <p class="txt">[보아르] 모아 미니 제습기 1000 [보아르] 모아 미니 제습기 1000 [보아르] 모아 미니 제습기 1000</p>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <span class="thumb">
+                                    <img src="../../images/img_price01.jpg" alt="">
+                                </span>
+                                <span class="thumb_info">
+                                    <span class="g_satisfy">4.0</span>
+                                    <span class="g_comment">263</span>
+                                    <p class="txt">[보아르] 모아 미니 제습기 1000 [보아르] 모아 미니 제습기 1000 [보아르] 모아 미니 제습기 1000</p>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <span class="thumb">
+                                    <img src="../../images/img_price01.jpg" alt="">
+                                </span>
+                                <span class="thumb_info">
+                                    <span class="g_satisfy">4.0</span>
+                                    <span class="g_comment">263</span>
+                                    <p class="txt">[보아르] 모아 미니 제습기 1000 [보아르] 모아 미니 제습기 1000 [보아르] 모아 미니 제습기 1000</p>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);">
+                                <span class="thumb">
+                                    <img src="../../images/img_price01.jpg" alt="">
+                                </span>
+                                <span class="thumb_info">
+                                    <span class="g_satisfy">4.0</span>
+                                    <span class="g_comment">263</span>
+                                    <p class="txt">[보아르] 모아 미니 제습기 1000 [보아르] 모아 미니 제습기 1000 [보아르] 모아 미니 제습기 1000</p>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
         <!--// 사은품 모두보기 -->
@@ -155,7 +230,7 @@
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 'auto',
         spaceBetween: 24,
-        pagination: ('.pagination'),
+        pagination: $('.swiper-container').siblings('.pagination_wrap').children('.pagination'),
         bulletClass: 'bul',
         bulletActiveClass: 'bul_active',
     });
