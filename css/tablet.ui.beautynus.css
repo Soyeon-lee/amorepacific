@@ -581,6 +581,7 @@ body{
 }
 .tablet_wrap.gift .view_cont{
   margin-top: 18px;
+  background-color: #e3e7f8;
 }
 .tablet_wrap.gift .price_cont{
   margin-top: -18px;
@@ -638,6 +639,15 @@ body{
   margin-top: 15px;
   font-size: 24px;
   color: #464646;
+}
+
+/* nodata */
+.tablet_wrap .no_data_wrap p::before{
+  background: url('../images/ico/ico_nosample02.png') 0 0 no-repeat;
+  background-size: 55px 53px;
+}
+.tablet_wrap .no_data_wrap p{
+  color: #4b3b80;
 }
 
 /* 프리미엄관 */
