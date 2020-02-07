@@ -642,11 +642,11 @@ body{
 }
 
 /* nodata */
-.tablet_wrap .no_data_wrap p::before{
+.tablet_wrap.gift .no_data_wrap p::before{
   background: url('../images/ico/ico_nosample02.png') 0 0 no-repeat;
   background-size: 55px 53px;
 }
-.tablet_wrap .no_data_wrap p{
+.tablet_wrap.gift .no_data_wrap p{
   color: #4b3b80;
 }
 
