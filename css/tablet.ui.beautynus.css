@@ -33,6 +33,7 @@ body{
   content: '';
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
   height: 36px;
   background-image: url('../images/ico/ico_shop_tab01.png');
@@ -444,9 +445,20 @@ body{
   height: 219px;
   margin-top: 20px;
 }
-.tablet_wrap.gift .thumb img{
-  vertical-align: middle;
+.tablet_wrap.gift .thumb{
+  display: block;
+  overflow: hidden;
+  position: relative;
   width: 100%;
+  padding-bottom: 58.5%;
+}
+.tablet_wrap.gift .thumb img{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-50%);
 }
 .tablet_wrap.gift .thumb_info{
   margin-top: 15px;
@@ -608,6 +620,7 @@ body{
   width: 100%;
   height: 100%;
   background-color: rgba(27, 27, 27, 0.5);
+  z-index: 10;
 }
 .tablet_wrap.gift .price_cont li .sold_out::after{
   content: '';
@@ -664,9 +677,20 @@ body{
 .tablet_wrap.premium .service_list li{
   margin-bottom: 20px;
 }
-.tablet_wrap.premium .service_list .img_box img{
-  vertical-align: middle;
+.tablet_wrap.premium .service_list .img_box{
+  display: block;
+  overflow: hidden;
+  position: relative;
   width: 100%;
+  padding-bottom: 58.6%;
+}
+.tablet_wrap.premium .service_list .img_box img{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-50%);
 }
 .tablet_wrap.premium .service_list .txt_box{
   padding: 27px 27px 32px;
