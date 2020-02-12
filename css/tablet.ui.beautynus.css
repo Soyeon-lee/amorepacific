@@ -754,7 +754,7 @@ body{
   background-size: 17px;
 }
 .tablet_wrap .goods_cont{
-  padding-bottom: 75px;
+  padding-bottom: 74px;
 }
 .tablet_wrap .goods_cont .goods_tab{
   border-top: 2px solid #eee;
@@ -768,33 +768,36 @@ body{
   border-bottom: 2px solid #35528f;
 }
 .tablet_wrap .goods_cont .hot_goods_wrap{
-  padding: 30px 40px 0;
+  padding: 30px 42px 18px;
 }
 .tablet_wrap .hot_goods_wrap strong{
   font-size: 27px;
 }
 .tablet_wrap .hot_goods_wrap .hot_goods{
-  margin-top: 15px;
+  margin-top: 7px;
 }
 .tablet_wrap .hot_goods_wrap .hot_goods li{
-  width: calc(50% - 8px);
-  min-height: 320px;
-  margin: 0 0 20px 10px;
+  width: calc(50% - 10px);
+  height: auto;
+  margin: 20px 0 0 20px;
 }
 .tablet_wrap .hot_goods_wrap .hot_goods li:nth-child(odd){
   margin-left: 0;
 }
 .tablet_wrap .hot_goods_wrap .hot_goods .hot_goods_img{
-  max-height: 195px;
+  padding-bottom: 68.5%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 .tablet_wrap .hot_goods_wrap .hot_goods .hot_goods_cont{
-  height: 125px;
+  height: 127px;
   padding: 20px 25px;
   font-size: 23px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+.tablet_wrap .hot_goods_wrap .hot_goods .hot_goods_cont p{
+  line-height: 1.3;
 }
 .tablet_wrap .goods_wrap .btn_wrap::before{
   width: 2px;
