@@ -431,16 +431,17 @@ html.ly_hidden, html.ly_hidden body{
   display: -webkit-box;
   -webkit-box-pack: center;
   justify-content: center;
-  word-wrap: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  height: 80px;
   padding: 0 27px;
   font-size: 27px;
   font-weight: bold;
   color: #464646;
   text-align: left;
+  word-wrap: break-word;
   word-break: break-all;
   word-wrap: break-word;
 }
@@ -648,16 +649,16 @@ html.ly_hidden, html.ly_hidden body{
 .tablet_wrap.gift .thumb_info .txt{
   display: block;
   display: -webkit-box;
-  -webkit-box-pack: center;
-  justify-content: center;
-  word-wrap: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  height: 72px;
   margin-top: 15px;
   font-size: 24px;
   color: #464646;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 
 /* nodata */
