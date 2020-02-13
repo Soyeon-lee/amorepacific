@@ -256,6 +256,11 @@ body{
 }
 
 /* layerpopup */
+html.ly_hidden, html.ly_hidden body{
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+}
 .tablet_layer_wrap{
   display: none;
   position: fixed;
@@ -682,7 +687,7 @@ body{
   overflow: hidden;
   position: relative;
   width: 100%;
-  padding-bottom: 58.6%;
+  padding-bottom: 80.2%;
 }
 .tablet_wrap.premium .service_list .img_box img{
   position: absolute;

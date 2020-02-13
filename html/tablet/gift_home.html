@@ -238,16 +238,16 @@
     // layer popup
     $('.btn_pop').click(function () {
         var openLayerId = $(this).attr('href') ? $(this).attr('href') : $(this).data('pop');
-        var body = $('#wrap').parent(body);
+        var $totalH = $('html');
 
         $(openLayerId).addClass('on');
-        $(body).css('overflow', 'hidden');
+        $($totalH).addClass('ly_hidden');
     });
 
     $('.btn_close').click(function (){
-        var body = $('#wrap').parent(body);
+        var $totalH = $('html');
         
-        $(body).css('overflow', 'visible');
+        $($totalH).removeClass('ly_hidden');
         $('.tablet_layer_wrap').removeClass('on');
     });
 </script>
