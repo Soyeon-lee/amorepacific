@@ -446,10 +446,9 @@ html.ly_hidden, html.ly_hidden body{
   word-wrap: break-word;
 }
 .tablet_wrap.gift .gift_slide .thumb{
-  overflow: hidden;
-  width: 100%;
-  height: 219px;
+  padding-bottom: 60%;
   margin-top: 20px;
+  background-color: #fff;
 }
 .tablet_wrap.gift .thumb{
   display: block;
@@ -457,6 +456,7 @@ html.ly_hidden, html.ly_hidden body{
   position: relative;
   width: 100%;
   padding-bottom: 58.5%;
+  box-sizing: border-box;
 }
 .tablet_wrap.gift .thumb img{
   position: absolute;
